@@ -12,13 +12,13 @@
     step 5- check if BMI is greater              than 25 
             5.1- if BMI is greaterthan 25 it is overweight 
             5.2- if BMI isn't greaterthan 25 goto step 6
-   step 6- check if BMI is lessthan 19
+    step 6- check if BMI is lessthan 19
           6.1- if it is lessthan 19, it is underweight 
     step 7- print BMI
     step 8- check if the  number is zero or non-zero.
          8.1- if the number is zero terminate the program.
-         8.2- if the number is non-zero  to execute the program 
-   step 9- stop
-          
+         8.2- if the number is non-zero to execute the program 
+    step 9- stop
+         
            
    
