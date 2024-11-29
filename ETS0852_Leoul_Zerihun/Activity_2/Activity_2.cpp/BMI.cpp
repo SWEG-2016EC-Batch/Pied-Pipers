@@ -7,12 +7,12 @@ using namespace std;
 
 int main()
 {
-  float weight;
+  float weight;     // Declare the variables 
   float height;
   float BMI; // Body Mass Index
   int number ;
   cout << " For how many person do you want to calculate BMI (Body Mass Index): "; 
-  cin >> number;
+  cin >> number;      // Enter for how many people it is gonna work
    
        for (int i = 1; i <= number ; i++) {      // iterates untill the number entered is reached
         cout << "Enter the height in meter: " << endl; // Enter your height here
