@@ -1,4 +1,4 @@
- Write a program that finds the result of the expression x the power of y 
+ Write a program that finds the result of x the power of y 
 
  The problem requires the value of x and y to be entered by the user.
 
