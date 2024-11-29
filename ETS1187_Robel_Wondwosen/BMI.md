@@ -10,14 +10,15 @@
   Normalweight: 18.5<=BMI<24.9
   Overweight: 25.0<= BMI<= 29.5
   Obese: BMI>29.5
+*Formula: BMI = Weight/(height * height)
 *restriction:
  1, both height and weight must be valid.
  2, Height must be greater than 0 to prevent division by zero.
  3, The program terminates when invalid input entered.
 
 #Algorithm:
-  1, Start
-  2, repeat forever:
+  step 1, Start
+  spet 2, repeat forever:
    2.1 prompt the user to input weight in Kg.
    2.2 prompt the user to input height in meters.
    2.3 check if the inputs are valid:
@@ -29,4 +30,4 @@
     2.5.3 Overweight: 25.0 <= BMI <= 29.5
     2.5.4 Obese: BMI > 29.5
    2.6 desplay BMI values with their category
-  3, End 
+  step 3, End 
