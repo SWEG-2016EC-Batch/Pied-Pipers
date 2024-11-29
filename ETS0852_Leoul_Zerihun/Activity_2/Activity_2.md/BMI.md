@@ -6,9 +6,9 @@ The algorithm would be:
 step 1- start
 step 2 - Accept the number for how many people it is going to work
 step 3 - Accept weight in kilograms and height in meters
-step 4 - check whether the input is valid or not
+step 4 - check whether the input is valid or invalid ( if input is lessthan or equal to zero ,characters or symbols)
    4.1 - if it is valid, goto step 5
-   4.2 - if it is invalid, goto step 10
+   4.2 - if it is invalid, print invalid input and goto step 10
 step 5- calculate BMI as weight/(height*height)
 step 6- check the BMI 
     6.1- if BMI is lessthan 18.5 ,it is underweight
