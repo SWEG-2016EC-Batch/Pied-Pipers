@@ -7,11 +7,12 @@ tax: 15%). */
 using namespace std;
 
 int main() {
-   
+   char (string employee_name ) [];
     int weekly_working_hours;
     double bonus_rate, gross_salary, bonus_payment, net_salary, base_salary, pension, tax, pension_rate = 0.05, tax_rate = 0.15;
     
-
+    cout << "Enter the employee's name: ";
+    cin >> employee_name;
     cout << "Enter base salary: ";
     cin >> base_salary;
 
