@@ -6,9 +6,9 @@ The algorithm would be:
 
 step 1 - Start
 step 2 - Accept the employee's name, weekly working hours, bonus rate per hour, and base salary
-step 3 - check weekly working hours, bonus rate per hour, and base salary
-     3.1 if weekly working hours, bonus rate per hour, and base salary is greater than zero, goto step 4
-     3.2 if weekly working hours, bonus rate per hour, and base salary is lessthan zero, print invalid input and goto step 10
+step 3 - check the validity of weekly working hours, bonus rate per hour, and base salary (inputs are greaterthan zero ,are not characters or symbols) 
+     3.1 if weekly working hours, bonus rate per hour, and base salary are valid, goto step 4
+     3.2 if weekly working hours, bonus rate per hour, and base salary are invalid, print invalid input and goto step 10
 step 4 - Calculate bonus payment as the product of bonus rate per hour by weekly working hours.
 step 5 - Calculate gross salary as the sum of bonus payment and base salary
 step 6 - Calculate pension as the product of gross salary and pension rate
