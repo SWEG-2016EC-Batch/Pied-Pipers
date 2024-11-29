@@ -36,7 +36,7 @@
         cin >> choice;
     } while (choice == 'y' || choice == 'Y');
 
-    cout << "Program terminated. Goodbye!\n";
+    cout << "Program terminated.\n";
  
    }
     return 0;
