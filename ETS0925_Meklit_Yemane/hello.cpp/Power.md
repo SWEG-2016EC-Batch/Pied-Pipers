@@ -5,4 +5,6 @@
 *output:
 1.Display the computed result.
 *operation:
+*Formula:result= x^y
+
 
