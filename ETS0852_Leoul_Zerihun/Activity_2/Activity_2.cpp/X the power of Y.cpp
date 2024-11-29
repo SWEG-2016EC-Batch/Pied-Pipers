@@ -1,5 +1,4 @@
-/* Write a program that find the result of  𝑥 the power of y,
-where the value of X and Y are entered by the user. */
+/* Write a program that find the result of  𝑥 the power of y, */
 
 #include <iostream>
 #include <cmath>  
