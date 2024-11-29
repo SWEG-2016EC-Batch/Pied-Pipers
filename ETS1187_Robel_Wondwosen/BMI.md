@@ -28,8 +28,8 @@
 
 ### Restriction: 
 
- 1. both height and weight must be valid.
- 2. Height must be greater than 0 to prevent division by zero.
+ 1. both `height` and `weight` must be valid.
+ 2. `Height` must be greater than 0 to prevent division by zero.
  3. The program terminates when invalid input entered.
 
 
@@ -39,18 +39,18 @@
     
     2.1 prompt the user to input weight in Kg.
 
-    2.2 input the Weight 
+    2.2 input the `Weight`
 
     2.3 prompt the user to input Height in meters.
 
-    2.4 input the Height
+    2.4 input the `Height`
 
     2.5 check if the inputs are valid:
 
-    2.5.1 if the input is invalid or Height <=0, display an error  and terminate the program.
+    2.5.1 if the input is invalid or `Height` <=0, display an error  and terminate the program.
 
         
-    2.6 calculate BMI using the Formula: BMI = Weight/(Height * Height)
+    2.6 calculate `BMI` using the Formula: BMI = Weight/(Height * Height)
 
     2.7 desplay BMI values
 
@@ -68,7 +68,7 @@
 
     2.10 Input the user's choice.
 
-    2.11 If the choice is not 'y' or 'Y', break the loop and terminate the program.
+    2.11 If the `choice` is not 'y' or 'Y', break the loop and terminate the program.
        
 3. End 
 
