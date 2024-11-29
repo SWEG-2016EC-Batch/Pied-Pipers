@@ -58,9 +58,14 @@
 4. Output
     
     Print "Employee Name: " + employeeName
+
     Print "Gross Salary: " + GrossSalary
+
     Print "Pension Deduction: " + PensionDeduction
-    Print "Tax Deduction: " + TaxDeduction
+
+     Print "Tax Deduction: " + TaxDeduction
+
     Print "Net Salary: " + NetSalary
+
     Print "Bonus Payment: " + BonusPayment
-5. Stop
+6. Stop
