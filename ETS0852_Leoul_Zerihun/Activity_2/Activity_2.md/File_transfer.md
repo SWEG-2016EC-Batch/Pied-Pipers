@@ -8,7 +8,7 @@ step 1 - Start
 step 2 - Accept the file size in Mb(Mega bytes)
 step 3 - check the validityof the file.
      3.1 if the file is valid, goto step 4 
-     3.2 if the file is invalid (if input is lessthan 0), print invalid input and goto step 11
+     3.2 if the file is invalid (if input is lessthan zero or is a character or symbol), print invalid input and goto step 11
 step 4 - convert the Mb file into byte by multiplying it to 1048576.
 step 5 - calculate how long does the file transfer takes as the division of the file size and the time it takes per character 
 step 6 - calculate the time in days as the time divided by 86400 
