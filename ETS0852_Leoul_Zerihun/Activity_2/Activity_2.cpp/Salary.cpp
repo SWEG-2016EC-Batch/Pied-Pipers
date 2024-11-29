@@ -3,25 +3,30 @@ base salary and find the employees gross-salary, net salary and bonus payment. (
 tax: 15%). */
 
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main() {
-   char (string employee_name ) [];
-    int weekly_working_hours;
-    double bonus_rate, gross_salary, bonus_payment, net_salary, base_salary, pension, tax, pension_rate = 0.05, tax_rate = 0.15;
+   string employee_name;
+    int weekly_working_hours;       // Declare variables 
+    double bonus_rate, gross_salary, bonus_payment, net_salary, base_salary, pension, tax;
+   const double pension_rate = 0.05, tax_rate = 0.15;    // Declare and initaialize varuables
     
     cout << "Enter the employee's name: ";
-    cin >> employee_name;
+    getline(cin, employee_name);               // Name of the employee is gonna be entered here
+    
     cout << "Enter base salary: ";
-    cin >> base_salary;
-
+    cin >> base_salary;       // the base salary of the employee is  gonna be entered  here 
+  
     cout << "Enter weekly working hours: ";
-    cin >> weekly_working_hours;
+    cin >> weekly_working_hours;    // the weekly working hour of the employee is gonna be  entered  here
 
     cout << "Enter bonus rate per hour: ";
     cin >> bonus_rate;
-
+       if (cin.fail() || base_salary < 0 || weekly_working_hours < 0 || bonus_rate < 0 ){   // checks the validity of the input
+       cout << "invalid input ";
+       } else {
+    // calculations  of base salary,,bonus payment, pension,tax ,gross-salary,net salary is done
     bonus_payment = weekly_working_hours * bonus_rate;
     gross_salary = base_salary + bonus_payment;
 
@@ -29,10 +34,13 @@ int main() {
     tax = gross_salary * tax_rate;
 
     net_salary = gross_salary - pension - tax;
-
+   
+  // prints  the employee's name , gross salary, bonus payment,, bet salary 
+    cout << "Employee name: " << employee_name << endl;   
     cout << "Gross Salary: $" << gross_salary << endl;
     cout << "Bonus Payment: $" << bonus_payment << endl;
     cout << "Net Salary: $" << net_salary << endl;
-
+    
+       }
     return 0;
 }
