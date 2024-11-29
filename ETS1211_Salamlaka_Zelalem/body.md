@@ -4,8 +4,11 @@ under weight or over weight.BMI is calculated as (BMI= w.h*h). Make the program 
 input- weight, height, number
 out- BMI
 
+  
 Start
+
      REPEAT 
+     
         Step 1- Input data for a person
         PRINT "Enter the weight (kg) of the person:"
         READ weight
