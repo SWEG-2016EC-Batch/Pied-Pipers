@@ -2,12 +2,8 @@
  #include <iomanip>
  using namespace std;
  int main(){
-    /*BMI calculator 
-    weight(kg) / height * height (m)
-    Underweight: BMI<18.5
-    Normalweight: 18.5<= BMI<= 24.9
-    Overweight: BMI >25
-    */
+    //BMI calculator 
+
    char choice;
    do{
    double height,weight,bmi;
