@@ -2,6 +2,7 @@
 *Inputs:
 1. height in meter
 2.weight in kg
+3.User decision to continue or stop
 *Output:
 1.Body mass index value
 2.weight category based on BMI(Under weight,Normal weight,Over weight)
@@ -33,5 +34,8 @@ Over weight:BMI >25
        2.5.2 If 18.5 ≤ BMI ≤ 24.9: Display "Normal weight".
        2.5.3 If BMI ≥ 25: Display "Overweight".
   2.6 Ask the user if they want to calculate BMI for another person.
+  2.7 Input the user's choice.
+  2.8 If the choice is not 'y' or 'Y', break the loop and terminate the 
+       program.
  
   step 3.Terminate when the user chooses not to continue.
