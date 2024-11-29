@@ -4,9 +4,14 @@ using namespace std;
 
 int main() {
     while (true) {
+        char choice;
         double weight, height, bmi;
         cout << "Enter weight (in kg): ";
         cin >> weight;
+        if (cin.fail()) {
+            cout << "Invalid input! Program terminated.\n";
+            break;
+        }
         cout << "Enter height (in meters): ";
         cin >> height;
         if (cin.fail() || height <= 0) {
@@ -23,7 +28,11 @@ int main() {
             cout << "You are OverWeight\n";
         else
             cout <<"you are Obese\n";
-
+        cout << "Do you want to calculate BMI for another person? (y/n): ";
+        cin >> choice;
+        if (choice != 'y' && choice != 'Y') {
+            break;
+        } 
       
     }
 
