@@ -1,15 +1,16 @@
 
-# problem analysis and algorithm design for BMI Calculator
+# Problem Analysis and Algorithm design for BMI Calculator
 
 
 
 
-## Input
+## Problem Analysis:
+### Input
 1. **Height** - in meters
 2. **Weight** - in Kg
 3. **User decision to continue or stop** -  y or n
 
-## Output
+### Output
 1. **BMI**-Calculated body mass index
 
 2. **Category based on BMI:**
@@ -22,10 +23,10 @@
 
        Obese: BMI>29.5
 
-## Formula: 
- **BMI = Weight/(height * height)**    
+### Formula: 
+ BMI = Weight/(height * height)    
 
-## Restriction: 
+### Restriction: 
 
  1. both height and weight must be valid.
  2. Height must be greater than 0 to prevent division by zero.
