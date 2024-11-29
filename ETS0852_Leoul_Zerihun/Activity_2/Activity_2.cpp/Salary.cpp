@@ -26,7 +26,7 @@ int main() {
        if (cin.fail() || base_salary < 0 || weekly_working_hours < 0 || bonus_rate < 0 ){   // checks the validity of the input
        cout << "invalid input ";
        } else {
-    // calculations  of base salary,,bonus payment, pension,tax ,gross-salary,net salary is done
+    // calculations  of base salary,bonus payment, pension, tax,gross-salary,net salary is calculated here
     bonus_payment = weekly_working_hours * bonus_rate;
     gross_salary = base_salary + bonus_payment;
 
@@ -35,7 +35,7 @@ int main() {
 
     net_salary = gross_salary - pension - tax;
    
-  // prints  the employee's name , gross salary, bonus payment,, bet salary 
+  // prints  the employee's name , gross salary, bonus payment, base salary 
     cout << "Employee name: " << employee_name << endl;   
     cout << "Gross Salary: $" << gross_salary << endl;
     cout << "Bonus Payment: $" << bonus_payment << endl;
