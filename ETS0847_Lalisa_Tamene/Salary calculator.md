@@ -20,9 +20,12 @@
 1. **Bonus** = weekly working hour * bonus rate per hour
 2. **Growth salary** = base salary + bonus 
 3. **Deduction**
+
     3.1 pension deduction = gross salary * 0.05
+
     3.2 tax deduction = gross salary * 0.15
-4. **Net salary** = gross salary - pension deduction - tax deduction
+   
+5. **Net salary** = gross salary - pension deduction - tax deduction
 
 ## Algorithm:
 
