@@ -1,5 +1,5 @@
    /* Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallons
-the automobiles can be driven. The program outputs the number miles the automobile cam be driven
+the automobiles can be driven. The program outputs the number miles the automobile can be driven
 without refueling. */
 
 #include <iostream>
@@ -16,7 +16,7 @@ int main() {
          cout << "invalid input";
          }else{
     miles_to_be_driven = tank_capacity * miles_per_Gallon;   // miles to be driven is calculated 
-    cout << "The automobile can be driven " << miles_to_be_driven << " miles without refueling." << endl;  // print the output
+    cout << "The automobile can be driven " << miles_to_be_driven << " miles without refueling" << endl;  // print the output
 }
     return 0;
 }
