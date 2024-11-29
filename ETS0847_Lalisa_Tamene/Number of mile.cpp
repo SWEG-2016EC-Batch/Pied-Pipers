@@ -1,19 +1,18 @@
 #include <iostream>
-#include <cmath> 
-
 using namespace std;
+
 int main() {
-   
-  double X, Y, result;
-    cout << "Enter the value of X (base): ";
-    cin >> X;
-    
-    cout << "Enter the value of Y (exponent): ";
-    cin >> Y;
-    
-    result = pow(X, Y);
-    
-    cout << "The result of " << X << "^" << Y << " is: " << result << endl;
-    
+    double tankCapacity, milesPerGallon, totalMiles;
+
+    cout << "Enter the fuel tank capacity of the automobile (in gallons): ";
+    cin >> tankCapacity;
+
+    cout << "Enter the miles per gallon (MPG) the automobile can be driven: ";
+    cin >> milesPerGallon;
+
+    totalMiles = tankCapacity * milesPerGallon;
+
+    cout << "The automobile can be driven " << totalMiles << " miles without refueling." << endl;
+
     return 0;
 }
