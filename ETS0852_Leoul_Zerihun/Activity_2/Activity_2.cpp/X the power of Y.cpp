@@ -14,7 +14,7 @@ int main() {
 
     cout << "Enter the value of y: " << endl;
     cin >> y;   // enter the value of y
-if (cin.fail() ) {   // checks the validity of the input
+if (cin.fail() || (x==0 && y==0) ) {   // checks the validity of the input
   cout << "invalid input";}
   
   else {
