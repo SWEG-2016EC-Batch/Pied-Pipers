@@ -4,7 +4,8 @@ Write a program that will calculate how long it will take to send a file */
 #include <iostream>
 using namespace std;
 int main(){
-    int file_size, byte ,time, hours, minutes, seconds, days;   // Declaration and initaialization of variables
+    double file_size, byte;
+    int time, hours, minutes, seconds, days;   // Declaration and initaialization of variables
     const int sending_rate = 960;
   
     cout <<"Enter the size of your file (Mb): ";
