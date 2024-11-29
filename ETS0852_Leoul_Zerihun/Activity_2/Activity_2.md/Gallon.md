@@ -1,14 +1,17 @@
-/ Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallons the automobiles can be driven. The program outputs the number of miles the automobile can be driven without refuelling.
+ Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallon the automobile can be driven. The program outputs the number of miles the automobile can be driven without refuelling.
 
-/ The problem needs two inputs, the capacity in gallons of an automobile fuel tank and the miles per gallons, and the automobile can be driven. The output will be the number of miles the automobile can be driven 
+ The problem requires two inputs, the capacity in gallons of an automobile fuel tank and the miles per gallons the automobile can be driven. The output will be the number of miles the automobile can be driven 
 
-/The algorithm would be:
+The algorithm would be:
 
 step 1 - Start
-step 2 - Read the capacity of an automobile fuel tank and the miles per gallons the automobile can be driven.
-step 3 - Calculate the number of miles the automobile can be driven as the product of gallon by miles per gallon 
-step 4 - Print the number of miles the automobile can be driven. 
-step 5 - Stop
+step 2 - Accept the capacity of an automobile fuel tank and the miles per gallons the automobile can be driven.
+step 3 - Check the validity of the input
+    3.1 - if it is valid, goto step 4
+    3.2 - if it is invalid, goto step 6
+step 4 - Calculate the number of miles the automobile can be driven as the product of gallon by miles per gallon 
+step 5 - Print the number of miles the automobile can be driven. 
+step 6 - Stop
 
 
 
