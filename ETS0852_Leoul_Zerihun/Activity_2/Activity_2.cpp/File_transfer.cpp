@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     double file_size, byte;
     int time, hours, minutes, seconds, days;   // Declaration and initaialization of variables
-    const int sending_rate = 960;
+    const int transmission_per_second= 960;  // file transmission per second 
   
     cout <<"Enter the size of your file (Mb): ";
     cin>>file_size;        // Enter the file size 
@@ -14,7 +14,7 @@ int main(){
     cout << "invalid input"; 
     }else{
     byte = 1048576 * file_size ;   //converts the Mb file to bytes
-    time =byte/sending_rate;   // calculates the time it takes to send the file
+    time =byte/transmission_per_second;   // calculates the time it takes to send the file
     // convert the time to days, hours,minutes and seconds;
 days = time /86400;    
 time = time % 86400;
