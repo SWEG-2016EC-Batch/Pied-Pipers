@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-  double weekly_working_hours, bonus_rate_per_hour, base_salary;
+    double weekly_working_hours, bonus_rate_per_hour, base_salary;
     double bonus_payment, gross_salary, pension_deduction, tax_deduction, net_salary;
     char name[50];
     cout << "Enter employee name: ";
@@ -24,5 +24,5 @@ int main(){
     cout << name << "'s Net Salary: " << net_salary << endl;
 
 
-  return0;
+  return 0;
 }
