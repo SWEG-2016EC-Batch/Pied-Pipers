@@ -1,12 +1,12 @@
-#Problem analysis:
-*Inputs:
-1. height in meter
-2.weight in kg
-3.User decision to continue or stop
-*Output:
-1.Body mass index value
-2.weight category based on BMI(Under weight,Normal weight,Over weight)
- *Formula
+##Problem analysis:
+###Inputs:
+1. **Height** -in meter
+2.**Weight**- in kg
+3.**User decision to continue or stop** - y or n
+##Output:
+1.**Body mass index value**
+2.**weight category based on BMI**(Under weight,Normal weight,Over weight)
+ ###Formula
 BMI is calculated using the formula: BMI=weight/(height*height)
 *BMI categories
 Under weight: BMI<18.5
