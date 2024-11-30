@@ -1,27 +1,26 @@
- Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallons
-the automobiles can be driven. The program outputs the number of miles the automobile can be driven
-without refuelling. 
+# Problem Statement
+The program calculates the number of miles an automobile can be driven without refueling, given the fuel tank capacity and miles per gallon (MPG).
+## Problem analysis 
+* The user should enter both the capacity of the automobile fuel tank (in gallons) and the miles per gallon (MPG) the automobile can drive.
 
- The problem requires two inputs, the capacity in gallons of an automobile fuel tank and the miles per gallons, the automobile can be driven. The output will be the number of miles the automobile can be driven 
+* The output will be the total number of miles the automobile can be driven without refueling.
 
-The algorithm would be:
+## Steps
 
-step 1 - Start
+1. **Start**
 
-step 2 - Accept the capacity of an automobile fuel tank and the miles per gallons the automobile can be driven.
+2. **Accept inputs**:
+   - The capacity of the automobile fuel tank (in gallons).
+   - The miles per gallon (MPG) the automobile can drive.
 
-step 3 - Check the validity of the input
-  
-    3.1 - If it is valid, go to step 4
-  
-    3.2 - If it is invalid (if the inputs are lessthan zero or characters or symbols), print invalid input and goto step 6
+3. **Validate the inputs**:
+   - If both inputs are valid (greater than zero and numeric), proceed to step 4.
+   - If the inputs are invalid (less than zero, characters, or symbols), print "Invalid input" and go to step 6.
 
-step 4 - Calculate the number of miles the automobile can be driven as the product of gallon by miles per gallon 
+4. **Calculate the total miles**:
+   - Multiply the tank capacity by the MPG: `total_miles = tank_capacity * MPG`.
 
-step 5 - Print the number of miles the automobile can be driven without refuelling
+5. **Print the result**:
+   - Display the total number of miles the automobile can be driven without refueling.
 
-step 6 - Stop
-
-
-
-
+6. **Stop**
