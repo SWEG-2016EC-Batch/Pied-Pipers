@@ -11,9 +11,9 @@ The program calculates the number of miles an automobile can be driven without r
 
 2. **Accept inputs**:
    - The capacity of the automobile fuel tank (in gallons).
-   - The miles per gallon (MPG) the automobile can drive.
+   - The miles per gallon (MPG) the automobile can be driven.
 
-3. **Check the inputs**:
+3. **Check the valaidity of the inputs**:
 
     3.1. If the inputs are valid (greater than zero), proceed to step 4.
 
@@ -26,3 +26,31 @@ The program calculates the number of miles an automobile can be driven without r
 7. **Stop**
 
 ## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"`Accept the input
+    The capacity of the
+automobile fuel tank
+   (in gallons)`"/]
+   B --> C[/"` Accept the input
+    The miles per gallon
+      the automobile
+     can be driven.`"/]
+
+
+    C --> D{"`Check the input's Validity
+(numeric or lessthan zero)`"}
+    D -- False --> E[/Invalid Input/]
+    E --> M([Stop])
+    D -- True --> G["`Calculate the total miles
+can be driven
+without refuelling
+Total miles = Capacity * MPG
+        `"]
+    G --> L[/Print
+total number of miles the
+          automobile can be driven
+           without refueling./]
+    L --> M([Stop])
+
