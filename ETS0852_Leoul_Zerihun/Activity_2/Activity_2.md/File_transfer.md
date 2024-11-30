@@ -38,9 +38,9 @@ A serial transmission line can transmit 960 characters per second. The program c
 flowchart TD
     A([Start]) --> B[/Accept file size in MB/]
     B --> C{Check the input's Validity}
-    C -- No --> D[/Invalid Input/]
-    D --> E([Stop])
-    C -- Yes --> F["`Convert file size to bytes`"]
+    C -- False --> D[/Invalid Input/]
+    D --> M([Stop])
+    C -- True --> F["`Convert file size to bytes`"]
     F --> G["`Calculate transfer time`"]
     G --> H["`Convert time into its
                corresponding days`"]
