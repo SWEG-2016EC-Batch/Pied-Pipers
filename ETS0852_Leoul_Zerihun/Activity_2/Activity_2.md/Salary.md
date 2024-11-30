@@ -1,31 +1,40 @@
-Design an algorithm and write a program to read an employee name weekly working hours, bonus rate per hour and base salary and find the employees gross-salary, net salary and bonus payment. (Hint: pension rate – 5%,tax: 15%).
+# Problem Statement
+The program calculates an employee's gross salary, net salary, and bonus payment based on their weekly working hours, bonus rate per hour, and base salary. 
+## Problem analysis 
+* The user should enter the name of the employee, bonus rate, base salary and weekly working hours.Pension rate (5%) and tax rate (15%) are constants.
 
-The problem requires an employee's name, weekly working hours, bonus rate per hour, and base salary entered by the user. Pension rate and tax rate are constant.The output required is the gross salary, net salary, and bonus payment of the employee.
+* The output will be the gross salary, net salary and bonus payment of the employee.
+* 
+## Steps
 
-The algorithm would be:
+1. **Start**
 
-step 1 - Start
+2. **Accept inputs**:
+   - Employee's name.
+   - Weekly working hours.
+   - Bonus rate per hour.
+   - Base salary.
 
-step 2 - Accept the employee's name, weekly working hours, bonus rate per hour, and base salary
-
-step 3 - check the validity of weekly working hours, bonus rate per hour, and base salary (inputs are greaterthan zero ,are not characters or symbols) 
+3. **Check inputs**:
    
-     3.1 if weekly working hours, bonus rate per hour, and base salary are valid, goto step 4
-  
-     3.2 if weekly working hours, bonus rate per hour, and base salary are invalid, print invalid input and goto step 10
+   3.1. If weekly working hours, bonus rate per hour, and base salary are valid (greaterthan zero and numeric), proceed to step 4.
+ 
+   3.2. If any input is invalid, print "Invalid input" and go to step 10.
 
-step 4 - Calculate bonus payment as the product of bonus rate per hour by weekly working hours.
+4. **Calculate bonus payment** as Weekly Working Hours times by Bonus Rate Per Hour.
 
-step 5 - Calculate gross salary as the sum of bonus payment and base salary
+5. **Calculate gross salary** as Base Salary plus Bonus Payment.
 
-step 6 - Calculate pension as the product of gross salary and pension rate
+6. **Calculate pension** as Gross Salary times by Pension Rate (0.05).
 
-step 7 - Calculate tax as the product of gross salary and tax rate.
+7. **Calculate tax** as Gross Salary times by Tax Rate (0.15).
 
-step 8 - Calculate net salary as the difference between gross salary and the sum of tax and pension
+8. **Calculate net salary** as the difference of Gross Salary by the sum of Tax and Pension.
 
-step 9 - print gross salary, net salary, bonus payment, and the employee's name
+9. **Print**: 
+   *  Employee Name,
+   *  Gross Salary,
+   *  Net Salary, and
+   *  Bonus Payment.
 
-step 10 - Stop
-
-
+10. **Stop**
