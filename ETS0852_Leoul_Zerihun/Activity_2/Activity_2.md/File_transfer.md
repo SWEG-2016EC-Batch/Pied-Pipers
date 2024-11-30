@@ -1,31 +1,40 @@
-A serial transmission line can transmit 960 characters a second. Write a program that will calculate how long it will take to send a file, given the file size. 
+# Problem Statement
+A serial transmission line can transmit 960 characters per second. The program calculates the time required to send a file of a given size.
+## Problem analysis 
+ The user enters the file size. 
+ The output will be the time it takes to send the file
 
-The problem requires file size as an input. The output will be the time it takes for a file to be transferred.
+## Steps
 
-The algorithm would be:
+1. **Start**
 
-step 1 - Start
+2. **Accept the file size** in MB (Megabytes).
 
-step 2 - Accept the file size in Mb(Mega bytes)
+3. **Validate the file size**:
 
-step 3 - check the validityof the file.
-   
-    3.1 if the file is valid, goto step 4 
-     
-    3.2 if the file is invalid (if input is lessthan zero or is a character or symbol), print invalid input and goto step 11
+   - If the file size is valid (greaterthan zero), proceed to step 4.
+ 
+   - If the file size is invalid (less than zero, a character, or a symbol), print "Invalid input" and go to step 11.
 
-step 4 - convert the Mb file into byte by multiplying it to 1048576.
+4. **Convert file size**:
+   - Multiply the file size (in MB) by 1,048,576 to convert it to bytes.
 
-step 5 - calculate how long does the file transfer takes as the division of the file size and the time it takes per character 
+5. **Calculate transfer time**:
+   - Divide the total file size (in bytes) by the time it takes to transfer one character (1/960 seconds).
 
-step 6 - calculate the time in days as the time divided by 86400 
+6. **Calculate time in days**:
+   - Divide the total time by 86,400 (seconds in a day).
 
-step 7 - calculate the time in hours as the remainder divided by 3600 
+7. **Calculate time in hours**:
+   - Find the remainder from step 6 and divide it by 3,600 (seconds in an hour).
 
-step 8 - calculate the time in minutes as the remainder divided by 60 
+8. **Calculate time in minutes**:
+   - Find the remainder from step 7 and divide it by 60 (seconds in a minute).
 
-step 9 - save the remainder time in seconds
+9. **Save the remaining time**:
+   - Store the leftover seconds.
 
-step 10 - print the time in days,hours,minutes and seconds
+10. **Print the results**:
+    - Display the time in days, hours, minutes, and seconds.
 
-step 11 - stop
+11. **Stop**
