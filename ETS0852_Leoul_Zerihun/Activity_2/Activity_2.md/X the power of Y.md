@@ -1,21 +1,24 @@
- Write a program that finds the result of x the power of y 
+# Problem Statement
+The program calculates the result of  x raised to the power of y 
+## Problem analysis 
+* The user enters the value of x and y.
 
- The problem requires the value of x and y to be entered by the user.
+* The output will be x raised to the power of y .
+## Steps
 
- The algorithm would be:
+1. **Start**
 
-Step 1 - Start
+2. **Accept inputs**:
+   - Accept the values of x and y.
 
-Step 2 - Accept the value of x and y 
+3. **Check the inputs**:
 
-Step 3 - Check the validity of the input 
-   
-    3.1 - If it is valid, goto Step 4
-  
-    3.2 - If it is invalid ( if both inputs are zero or characters or symbol), print invalid input and goto Step 6
+    3.1. If both inputs are valid (numeric and not zero for both x and y at the same time), proceed to Step 4.
 
-Step 4 - Calculate x the power of y as the product of x , y times.
+    3.2. If the inputs are invalid (both x and y are zero or inputs are characters or symbols), print "Invalid input" and go to Step 6.
 
-Step 5 - Print x the power of y 
+5. **Calculate x raised to the power of y** as the multiplication of x by itself y times
 
-Step 6 - Stop
+6. **Print** the value of x raised to the power of y .
+
+7. **Stop**
