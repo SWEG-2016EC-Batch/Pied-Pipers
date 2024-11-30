@@ -12,15 +12,15 @@ A serial transmission line can transmit 960 characters per second. The program c
 
 3. **Check the file size**:
 
-   - If the file size is valid (greater than zero and numeric), proceed to step 4.
+   3.1. If the file size is valid (greater than zero and numeric), proceed to step 4.
  
-   - If the file size is invalid (less than zero, non-numeric), print "Invalid input" and go to step 11.
+   3.2. If the file size is invalid (less than zero, non-numeric), print "Invalid input" and go to step 11.
 
 4. **Convert file size to bytes** as the product of file size (in MB) and 1,048,576 bytes.
 
-5. **Calculate transfer time** as the Division of  the total file size (in bytes) tp the time it takes to transfer one character (960 seconds).
+5. **Calculate transfer time** as the Division of  the total file size (in bytes) to the time it takes to transfer one character (960 seconds).
 
-6. **Convert time into its corresponding days** as the Division of the total time by 86,400 (seconds in a day).
+6. **Convert time into its corresponding days** as the division of the total time by 86,400 (seconds in a day).
 
 7. **Convert time into its corresponding hours** as the remainder from step 6 divided by 3,600 (seconds in an hour).
 
@@ -28,8 +28,7 @@ A serial transmission line can transmit 960 characters per second. The program c
 
 9. **Save the remaining time** as seconds
 
-10. **Print the results**:
-    - Display the time in days, hours, minutes, and seconds.
+10. **Print** the time in days, hours, minutes, and seconds.
 
 11. **Stop**
 
