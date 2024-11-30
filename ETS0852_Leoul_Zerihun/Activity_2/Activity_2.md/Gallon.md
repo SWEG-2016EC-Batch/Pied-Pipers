@@ -13,14 +13,16 @@ The program calculates the number of miles an automobile can be driven without r
    - The capacity of the automobile fuel tank (in gallons).
    - The miles per gallon (MPG) the automobile can drive.
 
-3. **Validate the inputs**:
-   - If both inputs are valid (greater than zero and numeric), proceed to step 4.
-   - If the inputs are invalid (less than zero, characters, or symbols), print "Invalid input" and go to step 6.
+3. **Check the inputs**:
 
-4. **Calculate the total miles**:
-   - Multiply the tank capacity by the MPG: `total_miles = tank_capacity * MPG`.
+    3.1. If the inputs are valid (greater than zero), proceed to step 4.
 
-5. **Print the result**:
-   - Display the total number of miles the automobile can be driven without refueling.
+    3.2. If the inputs are invalid (less than zero or non-numeric ), print "Invalid input" and go to step 6.
 
-6. **Stop**
+5. **Calculate the total miles** as the product of tank capacity by the miles per gallon.
+
+6. **Print** the total number of miles the automobile can be driven without refueling.
+
+7. **Stop**
+
+## Flowchart
