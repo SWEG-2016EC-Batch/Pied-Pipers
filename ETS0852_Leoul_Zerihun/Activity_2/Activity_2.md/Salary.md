@@ -15,19 +15,19 @@ The program calculates an employee's gross salary, net salary, and bonus payment
    - Bonus rate per hour.
    - Base salary.
 
-3. **Check inputs**:
+3. **Check the validity of the inputs**:
    
-   3.1. If weekly working hours, bonus rate per hour, and base salary are valid (greaterthan zero and numeric), proceed to step 4.
+   3.1. If the inputs are valid (greater than zero and numeric), proceed to step 4.
  
-   3.2. If any input is invalid, print "Invalid input" and go to step 10.
+   3.2. If any input is invalid (lessthan zero or non-numeric), print "Invalid input" and go to step 10.
 
-4. **Calculate bonus payment** as Weekly Working Hours times by Bonus Rate Per Hour.
+4. **Calculate bonus payment** as the product of Weekly Working Hours by Bonus Rate Per Hour.
 
-5. **Calculate gross salary** as Base Salary plus Bonus Payment.
+5. **Calculate gross salary** as the sum of  Base Salary and Bonus Payment.
 
-6. **Calculate pension** as Gross Salary times by Pension Rate (0.05).
+6. **Calculate pension** as the product of Gross Salary by Pension Rate (0.05).
 
-7. **Calculate tax** as Gross Salary times by Tax Rate (0.15).
+7. **Calculate tax** as the product of Gross Salary by Tax Rate (0.15).
 
 8. **Calculate net salary** as the difference of Gross Salary by the sum of Tax and Pension.
 
@@ -38,3 +38,39 @@ The program calculates an employee's gross salary, net salary, and bonus payment
    *  Bonus Payment.
 
 10. **Stop**
+
+## Flowchart 
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Accept inputs
+        Employee's name.
+        Weekly working hours.
+        Bonus rate per hour.
+        Base salary./]
+    B --> C{"`Check the input's Validity
+(numeric or greaterthan zero)`"}
+    C -- False --> D[/Print
+Invalid Input/]
+    D --> M([Stop])
+    C -- True --> F["`Calculate bonus payment
+bonus = WWR * bonus rate`"]
+    F --> G["`Calculate gross salary
+GS = BS + BP`"]
+    G --> H["`Calculate pension
+Pension = GS * P.rate`"]
+    H --> I["`Calculate tax
+Tax = GS * tax rate`"]
+    I --> J["`Calculate net salary
+NS = GS - ( Tax + Pension)`"]
+    J --> K[/"`Print
+      Employee Name
+      Gross Salary
+      Net Salary
+      Bonus Payment`"/]
+    K --> M([Stop])
+
+
+
+
+
