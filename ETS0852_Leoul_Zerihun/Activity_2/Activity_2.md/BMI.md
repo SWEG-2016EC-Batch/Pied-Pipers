@@ -1,35 +1,32 @@
-Make a program that calculates the Body Mass Index (BMI) of a person and determine whether the person is in normal weight, under weight or over weight. BMI is calculated as (BMI = w/h*h). 
+# Problem Statement
+The program calculates the Body Mass Index (BMI) of a person and determines if the person is underweight, normal weight, or overweight. 
+## Problem analysis 
+* The user should enter both weight and height and the number of people he/she want to calculate for.
+* The output willbe the BMI and the category the person falls into.
 
-The problem needs weight and height as an input. The output will be BMI.
 
-The algorithm would be: 
+## Steps
+1. **Start**
 
- step 1- start
+2. **Accept the number of people** to process.
 
-step 2 - Accept the number for how many people it is going to work
+3. For each person:
+   - **Accept weight** in kilograms and **height** in meters.
 
-step 3 - Accept weight in kilograms and height in meters
+4. **Validate the input**:
+   - If the input is valid (greater than zero and numeric), proceed to step 5.
+   - If the input is invalid (less than or equal to zero, or a non-numeric value), print "Invalid input" and skip to the next person.
 
-step 4 - check whether the input is valid or invalid ( if input is lessthan or equal to zero ,characters or symbols)
- 
-   4.1 - if it is valid, goto step 5
-  
-   4.2 - if it is invalid, print invalid input and goto step 10
+5. **Calculate BMI**:
+   - BMI = weight / (height * height)
 
-step 5- calculate BMI as weight/(height*height)
+6. **Determine weight category**:
+   - If BMI < 18.5, print "Underweight".
+   - If 18.5 ≤ BMI < 25, print "Normal weight".
+   - If BMI ≥ 25, print "Overweight".
 
-step 6- check the BMI 
+7. **Print the BMI** value and category.
 
-    6.1- if BMI is lessthan 18.5 ,it is underweight
-  
-    6.2- if it is greaterthan or equal to 18.5 and lessthan 25, it is normal weight
+8. Repeat steps 3 to 7 until the number of people entered is reached.
 
-step 7- check the BMI 
-   
-     7.1- if BMI is greaterthan or equal to 25, it is overweight
-     
-step 8- print the BMI
-
-Step 9- continue the execution until the number entered is reached
-
-step 10- Stop
+9. **Stop**
