@@ -36,7 +36,6 @@ The program calculates the Body Mass Index (BMI) of a person and determines if t
 9. **Stop**
 
 ## Flowchart 
-
 ```mermaid
 flowchart TD
     A([Start]) --> B[/"`Accept
@@ -44,29 +43,38 @@ flowchart TD
         `"/]
     B --> C[/"`Accept
          weight(kg)
-         height(m)`"]
-    C --> D{"`Check the input's Validity
+         height(m)`"/]
+    C --> D{"`Check the input's
+    (weight and height)Validity
 (numeric or greaterthan zero)`"}
     D -- False --> E[/Print
 Invalid Input/]
-    E --> O([Stop])
+    E --> Y{Check if the number of people entered is reached.
+}
     D -- True --> F["`Calculate BMI
 BMI = weight / (height^2) `"]
-   F --> G["`Print
-BMI`"]
+   F --> G[/"`Print
+BMI`"/]
     G --> H{"`Check the BMI category
 If BMI < 18.5`"}
     H -- True --> I["`Print
 Underweight`"]
-    I --> O([Stop])
+I --> Y{Check if the number of
+people entered is reached.
+}
     H -- False --> J{"`check If 18.5 ≤ BMI < 25`"}
     J -- True --> K[/"`Print
       Normal weight`"/]
+K --> Y{Check if the number of
+people entered is reached.
+}
     J -- False --> L[/"`Print
   Overweight`"/]
-L --> O([Stop])
-
-
-
-
+L --> Y{Check if the number of
+people entered is reached.
+}
+Y -- False --> C[/"`Accept
+         weight(kg)
+         height(m)`"/]
+Y -- True --> O([Stop])
 
