@@ -9,31 +9,35 @@ The program calculates the Body Mass Index (BMI) of a person and determines if t
 1. **Start**
 
 2. **Accept the number of people** to process.
+3. **Check the input's validity**
 
-3. For each person:
+   3.1. If the input is valid (numeric or greaterthan zero), go to step 4
+ 
+   3.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10
+4. For each person:
    - **Accept weight** in kilograms and **height** in meters.
 
-4. **Validate the input**:
+5. **Validate the input**:
  
-   4.1. If the input is valid (greater than zero and numeric), proceed to step 5.
+   5.1. If the input is valid (greater than zero and numeric), proceed to step 5.
  
-   4.2. If the input is invalid (less than or equal to zero, or a non-numeric value), print "Invalid input" and skip to the next person.
+   5.2. If the input is invalid (less than or equal to zero, or a non-numeric value), print "Invalid input" and skip to the next person.
 
-5. **Calculate BMI** as weight divided by height squared
+6. **Calculate BMI** as weight divided by height squared
 
-6. **Check the BMI category**:
+7. **Check the BMI category**:
  
-   6.1. If BMI < 18.5, print "Underweight".
+   7.1. If BMI < 18.5, print "Underweight".
 
-    6.2. If 18.5 ≤ BMI < 25, print "Normal weight".
+    7.2. If 18.5 ≤ BMI < 25, print "Normal weight".
  
-   6.3. If BMI ≥ 25, print "Overweight".
+   7.3. If BMI ≥ 25, print "Overweight".
 
-7. **Print the BMI** value and category.
+8. **Print the BMI** value and category.
 
-8. **Repeat** steps 3 to 7 until the number of people entered is reached.
+9. **Repeat** steps 3 to 7 until the number of people entered is reached.
 
-9. **Stop**
+10. **Stop**
 
 ## Flowchart 
 ```mermaid
@@ -41,7 +45,13 @@ flowchart TD
     A([Start]) --> B[/"`Accept
  the number of people 
         `"/]
-    B --> C[/"`Accept
+    B --> Z{Check the input's validity}
+    Z -- True --> C[/"`Accept
+         weight(kg)
+         height(m)`"/]
+    Z -- False --> X[/Print
+Invalid Input/] --> O([Stop])
+    C[/"`Accept
          weight(kg)
          height(m)`"/]
     C --> D{"`Check the input's
