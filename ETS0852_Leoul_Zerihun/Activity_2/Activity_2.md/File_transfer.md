@@ -1,6 +1,6 @@
 # Problem Analysis 
 ## Problem Statement 
-* A serial transmission line can transmit 96 of  characters per second. The program calculates the time required to send a file of a given size.
+* A serial transmission line can transmit 960 of characters per second. The program calculates the time required to send a file of a given size.
 
    * The user enters the file size.
 
