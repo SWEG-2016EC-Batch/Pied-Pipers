@@ -1,4 +1,4 @@
-   /* Design an algorithm and write a to read an employee name weekly working hours, bonus rate per hour and 
+   /*   write a program that read an employee name weekly working hours, bonus rate per hour and 
 base salary and find the employees gross-salary, net salary and bonus payment. (Hint: pension rate – 5%, 
 tax: 15%). */
 
@@ -39,6 +39,8 @@ int main() {
     cout << "Employee name: " << employee_name << endl;   
     cout << "Gross Salary: $" << gross_salary << endl;
     cout << "Bonus Payment: $" << bonus_payment << endl;
+    cout << "Tax: $" << tax << endl;
+    cout << "Pension: $" << pension << endl;
     cout << "Net Salary: $" << net_salary << endl;
     
        }
