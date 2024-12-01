@@ -2,21 +2,21 @@
 
 ## Problem Analysis:
 
-## Input
+### Input
 
 1.Fuel tank capacity (in gallons)
 
 2.Miles per gallon (mpg)
 
-## Output
+### Output
 
 Number of miles the automobile can be driven without refueling.
 
-## Calculation
+### Calculation
 
 To find out the number of miles the automobile can be driven, multiply the fuel tank capacity by the miles per gallon.
 
-## Operation
+### Operation
 
 1.Variable declaration - that holds an input and operational results
 
@@ -26,7 +26,7 @@ To find out the number of miles the automobile can be driven, multiply the fuel 
 
 4.Print output prompt message and process result (Net salary)
 
-## Algorithm
+### Algorithm
 1.Start
 
 2.Declare variables for gallonCapacity, mile_per_gallon, and miles.
