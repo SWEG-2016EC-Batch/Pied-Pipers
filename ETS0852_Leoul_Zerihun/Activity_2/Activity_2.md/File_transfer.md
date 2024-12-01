@@ -1,16 +1,21 @@
-# Problem Statement
-A serial transmission line can transmit 960 characters per second. The program calculates the time required to send a file of a given size.
-## Problem analysis 
- The user enters the file size. 
- The output will be the time it takes to send the file
+# Problem Analysis 
+## Problem Statement 
+* A serial transmission line can transmit 96 of  characters per second. The program calculates the time required to send a file of a given size.
 
-## Steps
+   * The user enters the file size.
+
+   * The output will be the time takes to send the file
+
+   * The time required to send a file is calculated by dividing the file size to 960(character per second)
+  
+
+## Algorithm 
 
 1. **Start**
 
 2. **Accept the file size** in MB (Megabytes).
 
-3. **Check the file size**:
+3. **Check the validity the file size**:
 
    3.1. If the file size is valid (greater than zero and numeric), proceed to step 4.
  
@@ -18,7 +23,7 @@ A serial transmission line can transmit 960 characters per second. The program c
 
 4. **Convert file size to bytes** as the product of file size (in MB) and 1,048,576 bytes.
 
-5. **Calculate transfer time** as the Division of  the total file size (in bytes) to the time it takes to transfer one character (960 seconds).
+5. **Calculate transfer time** as the division of  the total file size (in bytes) to the time it takes to transfer one character (960 seconds).
 
 6. **Convert time into its corresponding days** as the division of the total time by 86,400 (seconds in a day).
 
@@ -26,7 +31,7 @@ A serial transmission line can transmit 960 characters per second. The program c
 
 8. **Convert time into its corresponding minutes** as the remainder from step 7 divided by 60 (seconds in a minute).
 
-9. **Save the remaining time** as seconds
+9. **Save the remaining time** in seconds
 
 10. **Print** the time in days, hours, minutes, and seconds.
 
@@ -38,18 +43,22 @@ A serial transmission line can transmit 960 characters per second. The program c
 flowchart TD
     A([Start]) --> B[/Accept file size in MB/]
     B --> C{Check the input's Validity}
-    C -- False --> D[/Invalid Input/]
+    C -- False --> D[/Print
+    Invalid Input/]
     D --> M([Stop])
     C -- True --> F["`Convert file size to bytes`"]
     F --> G["`Calculate transfer time`"]
     G --> H["`Convert time into its
                corresponding days`"]
-    H --> I["`Convert time into
+    H --> I["`Convert the remaining
+                time into
           its corresponding hours`"]
-    I --> J["`Convert time into
-       its corresponding minutes `"]
-    J --> K["`Convert time into
-        its corresponding seconds`"]
-    K --> L[/days, hours, minutes,
-                           seconds/]
+    I --> J["`Convert the remaining
+                time into
+          its corresponding minutes`"]
+    J --> K["`Save the remaining time
+    in seconds `"]
+    K --> L[/Print
+the time in  days, hours,
+minutes and  seconds/]
     L --> M([Stop])
