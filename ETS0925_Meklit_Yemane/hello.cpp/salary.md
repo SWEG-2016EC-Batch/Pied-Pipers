@@ -2,7 +2,7 @@
 
 ## Problem Analysis
 
-## Input
+### Input
 
 1.Employee name
 
@@ -12,7 +12,7 @@
 
 4.Base salary
 
-## Output
+### Output
 
 1.Employee's name
 
@@ -22,13 +22,13 @@
 
 4.Bonus payment
 
-## Calculation
+### Calculation
 
 Bonus Payment: bonus_payment = weekly_working_hours * bonus_rate_per_hour
 
 Gross Salary: gross_salary = base_salary + bonus_payment
 
-## Operation
+### Operation
 
 1.Variable declaration- that holds an input and operational results
 
@@ -48,7 +48,7 @@ Gross Salary: gross_salary = base_salary + bonus_payment
 
 6.Print output prompt message and process result (Net salary)
 
-## Algorithm
+### Algorithm
 
 1.Start
 
