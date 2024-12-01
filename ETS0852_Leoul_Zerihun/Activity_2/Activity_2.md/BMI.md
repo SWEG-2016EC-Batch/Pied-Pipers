@@ -41,7 +41,13 @@ The program calculates the Body Mass Index (BMI) of a person and determines if t
 
 8. **Print the BMI** value and category.
 
-9. **Repeat** steps 3 to 7 until the number of people entered is reached.
+9. **Check if the number of
+people entered has reached the limit**
+
+    9.1. If the number of
+people entered has reached the limit, go to step 10
+
+    9.2, If the number of people entered hasn't reached the limit, go to step 4
 
 10. **Stop**
 
@@ -87,7 +93,8 @@ BMI`"/]
 L --> G[/"`Print
 BMI`"/]
 G --> Y{Check if the number of
-people entered is reached.
+people entered 
+has reached the limit.
 }
 Y -- False --> C[/"`Accept
          weight(kg)
