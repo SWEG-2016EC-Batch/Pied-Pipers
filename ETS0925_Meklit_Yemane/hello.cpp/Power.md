@@ -1,4 +1,4 @@
-# Problem analysis and algorithm design for power
+# Problem analysis and algorithm design for power calculator
 
 ## problem analysis:
 
