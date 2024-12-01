@@ -1,11 +1,21 @@
-# Problem Statement
-The program calculates an employee's gross salary, net salary, and bonus payment based on their weekly working hours, bonus rate per hour, and base salary. 
-## Problem analysis 
-* The user should enter the name of the employee, bonus rate, base salary and weekly working hours.Pension rate (5%) and tax rate (15%) are constants.
+# Problem Analysis 
+## Problem Statement 
+* The program calculates an employee's gross salary, net salary, and bonus payment based on their weekly working hours, bonus rate per hour, and base salary. 
 
-* The output will be the gross salary, net salary and bonus payment of the employee.
-* 
-## Steps
+    * The user should enter the name of the employee, bonus rate, base salary and weekly working hours.Pension rate (5%) and tax rate (15%) are constants.
+
+     * Bonus Payment is calculated by the product of bonus rate and weekly working hours
+ 
+     * Gross Salary is calculated by the sum of base salary and bonus payment
+ 
+     * Pension and Tax are calculated by multiplying their rate with the gross salary respectively.
+ 
+     * Net salary is calculated by subtracting the Gross salary by the sum of tax and pension 
+  
+
+     * The output will be the gross salary, net salary, tax, pension, and bonus payment of the employee.
+  
+## Algorithm 
 
 1. **Start**
 
@@ -35,7 +45,8 @@ The program calculates an employee's gross salary, net salary, and bonus payment
    *  Employee Name,
    *  Gross Salary,
    *  Net Salary, and
-   *  Bonus Payment.
+   *  Bonus Payment
+   *  Tax and Pension.
 
 10. **Stop**
 
@@ -67,7 +78,8 @@ NS = GS - ( Tax + Pension)`"]
       Employee Name
       Gross Salary
       Net Salary
-      Bonus Payment`"/]
+      Bonus Payment
+Tax and Pension`"/]
     K --> M([Stop])
 
 
