@@ -41,23 +41,29 @@
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[/Accept file size in MB/]
+    A([Start]) --> B[/Accept file size in MB./]
     B --> C{Check the input's Validity}
     C -- False --> D[/Print
     Invalid Input/]
     D --> M([Stop])
-    C -- True --> F["`Convert file size to bytes`"]
-    F --> G["`Calculate transfer time`"]
+    C -- True --> F["`Convert file size to bytes.
+file size * 1,048,576`"]
+    F --> G["`Calculate transfer time.
+file size / 960`"]
     G --> H["`Convert time into its
-               corresponding days`"]
+               corresponding days.
+(time / 86400)`"]
     H --> I["`Convert the remaining
                 time into
-          its corresponding hours`"]
+          its corresponding hours.
+(time % 86400 / 3600)`"]
     I --> J["`Convert the remaining
                 time into
-          its corresponding minutes`"]
+          its corresponding minutes.
+(time % 86400 % 3600 / 60)`"]
     J --> K["`Save the remaining time
-    in seconds `"]
+    in seconds
+(time % 86400 % 3600 % 60)`"]
     K --> L[/Print
 the time in  days, hours,
 minutes and  seconds/]
