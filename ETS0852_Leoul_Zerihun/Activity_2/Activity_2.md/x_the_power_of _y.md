@@ -1,10 +1,10 @@
-# Problem Statement
-The program calculates the result of  x raised to the power of y 
-## Problem analysis 
-* The user enters the value of x and y.
-
-* The output will be x raised to the power of y .
-## Steps
+# Problem Analysis 
+## Problem Statement 
+* The program calculates the result of  x raised to the power of y 
+     * The user enters the value of x and y.
+     * The output will be x raised to the power of y .
+     * x raised to the power of y is calculated by multiplying x by it self y times
+## Algorithm 
 
 1. **Start**
 
@@ -16,11 +16,11 @@ The program calculates the result of  x raised to the power of y
 
     3.2. If the inputs are invalid (both x and y are zero or inputs are non-numeric), print "Invalid input" and go to Step 6.
 
-5. **Calculate x raised to the power of y** as the multiplication of x by itself y times
+4. **Calculate x raised to the power of y** as the multiplication of x by itself y times
 
-6. **Print** the value of x raised to the power of y .
+5. **Print** the value of x raised to the power of y .
 
-7. **Stop**
+6. **Stop**
 
 ## Flowchart 
 
@@ -34,8 +34,8 @@ flowchart TD
      at the same time)`"}
     C -- False --> D[/Invalid Input/]
     D --> M([Stop])
-    C -- True --> F["`Calculate x
-      raised to the power of y
+    C -- True --> F["`Calculate
+ x raised to the power of y
            x^y
  `"]
     F --> L[/Print the value of
