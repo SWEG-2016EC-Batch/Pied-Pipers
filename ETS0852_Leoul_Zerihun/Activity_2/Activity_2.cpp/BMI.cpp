@@ -13,7 +13,9 @@ int main()
   int number ;
   cout << " For how many person do you want to calculate BMI (Body Mass Index): "; 
   cin >> number;      // Enter for how many people it is gonna work
-   
+   if (cin.fail() || number < 0 ) {   // checks whether the input is valid or not
+   cout << "invalid input" << endl;
+   }else{
        for (int i = 1; i <= number ; i++) {      // iterates untill the number entered is reached
         cout << "Enter the height in meter: " << endl; // Enter your height here
         cin >> height;
@@ -21,22 +23,21 @@ int main()
         cin >> weight;
    if (cin.fail() || weight <= 0 || height <= 0) {   // checks whether the input is valid or not
    cout << "invalid input" << endl;
-   break;  
    }else{
    
         BMI = weight / (height * height) ; // Body Mass Index is calculated as the division of weight to height squared
-              cout << "your BMI (Body Mass Index) is: " << BMI << endl;
+              cout << "Your BMI (Body Mass Index) is: " << BMI << endl;
           if (BMI < 18.5) {         // checks if the BMI is lessthan 18.5
-              cout << "you are Underweight" << endl;    // prints  underweight if BMI is lessthan 18.5
+              cout << "You are Underweight" << endl;    // prints  underweight if BMI is lessthan 18.5
           } else if (BMI >= 18.5 && BMI<= 24.9){       // checks if the BMI is between 18.5 and 24.9
-              cout << "you are normal weight" << endl;   // prints normalweight if BMI is between the range
+              cout << "You are Normal weight" << endl;   // prints normalweight if BMI is between the range
           }else {
-              cout  << "you are Overweight " << endl;  // prints overweight if BMI is greaterthan 25
+              cout  << "You are Overweight " << endl;  // prints overweight if BMI is greaterthan 25
           }
-            
+            }
        }
                   }
     
    
     return 0;
-    }
+}
