@@ -75,3 +75,7 @@ Gross Salary: gross_salary = base_salary + bonus_payment
 12.Output the employee's name, gross salary, bonus payment, and net salary.
 
 13.End
+
+# flow chart
+
+![slalry4](https://github.com/user-attachments/assets/b095040f-3d20-4b2d-948c-7d78f2a0c2ea)
