@@ -28,4 +28,8 @@ Number of miles the automobile can be driven without refueling.
 9. Output the value of `miles` with an appropriate message.
 10. End
 
+# flow chart
+
+
+![miles](https://github.com/user-attachments/assets/0f8c3b12-32b8-4c2c-9a35-74d26bca219a)
 
