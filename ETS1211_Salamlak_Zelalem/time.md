@@ -1,33 +1,70 @@
-/*5,the algorithm a serial transmission line can 
-transmit 960 character a second, that will calculate 
-how long it will take to send a file, given the file 
-size. test your grogram on a 400MB 
-file which may take days
+# Problem Analysis 
+## Problem Statement 
+* A serial transmission line can transmit 960 of characters per second. The program calculates the time required to send a file of a given size.
 
-start 1- start
-     step 2- set already Constants
-        transmission_rate = 960   // Characters per second 
-                filesizeMB = 400  // file size in MB
-     
+   * The user enters the file size.
 
-    step 3- Convert file size from MB to bytes (1 MB = 1024 * 1024 bytes)
-            file_size_bytes = file_size_MB * 1024 * 1024
+   * The output will be the time takes to send the file
 
-    step 4- Calculate the time in seconds to send the entire file
-    time_in_seconds = file_size_bytes / transmission_rate
+   * The time required to send a file is calculated by dividing the file size to 960(character per second)
+  
 
-    step 5- Convert the time from seconds to days, hours, minutes, and seconds
-    time_in_days = time_in_seconds / (24 * 3600)
-    remaining_seconds = time_in_seconds MOD (24 * 3600)
+## Algorithm 
 
-    time_in_hours = remaining_seconds / 3600
-    remaining_seconds = remaining_seconds MOD 3600
+1. **Start**
 
-    time_in_minutes = remaining_seconds / 60
-    time_in_seconds = remaining_seconds MOD 60
+2. **Accept the file size** in MB (Megabytes).
 
-    step 6- Output the time to send the file
-       PRINT "It will take approximately "
-        PRINT time_in_days, "days ", time_in_hours, "hours ", time_in_minutes, "minutes ", time_in_seconds, "seconds to send the file."
+3. **Check the validity the file size**:
 
-step 7- stop
+   3.1. If the file size is valid (greater than zero and numeric), proceed to step 4.
+ 
+   3.2. If the file size is invalid (less than zero, non-numeric), print "Invalid input" and go to step 11.
+
+4. **Convert file size to bytes** as the product of file size (in MB) and 1,048,576 bytes.
+
+5. **Calculate transfer time** as the division of  the total file size (in bytes) to the time it takes to transfer one character (960 seconds).
+
+6. **Convert time into its corresponding days** as the division of the total time by 86,400 (seconds in a day).
+
+7. **Convert time into its corresponding hours** as the remainder from step 6 divided by 3,600 (seconds in an hour).
+
+8. **Convert time into its corresponding minutes** as the remainder from step 7 divided by 60 (seconds in a minute).
+
+9. **Save the remaining time** in seconds
+
+10. **Print** the time in days, hours, minutes, and seconds.
+
+11. **Stop**
+
+## Flowchart 
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Accept file size in MB./]
+    B --> C{Check the input's Validity}
+    C -- False --> D[/Print
+    Invalid Input/]
+    D --> M([Stop])
+    C -- True --> F["`Convert file size to bytes.
+file size * 1,048,576`"]
+    F --> G["`Calculate transfer time.
+file size / 960`"]
+    G --> H["`Convert time into its
+               corresponding days.
+(time / 86400)`"]
+    H --> I["`Convert the remaining
+                time into
+          its corresponding hours.
+(time % 86400 / 3600)`"]
+    I --> J["`Convert the remaining
+                time into
+          its corresponding minutes.
+(time % 86400 % 3600 / 60)`"]
+    J --> K["`Save the remaining time
+    in seconds
+(time % 86400 % 3600 % 60)`"]
+    K --> L[/Print
+the time in  days, hours,
+minutes and  seconds/]
+    L --> M([Stop])
