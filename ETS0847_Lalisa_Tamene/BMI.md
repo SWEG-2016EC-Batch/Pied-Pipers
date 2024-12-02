@@ -72,8 +72,8 @@
 3. End 
 
 
-#Flowchart
-
+## Flowchart
+``` mermaid
 flowchart TD
     A([start]) --> B[Read weight in kg]
     B --> C{is weight invalid input?}
@@ -95,4 +95,5 @@ flowchart TD
     L --> N([End])
     J --> N
     M --> N
+```
 
