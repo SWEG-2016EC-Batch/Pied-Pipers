@@ -16,16 +16,6 @@ Number of miles the automobile can be driven without refueling.
 
 To find out the number of miles the automobile can be driven, multiply the fuel tank capacity by the miles per gallon.
 
-### Operation
-
-1.Variable declaration - that holds an input and operational results
-
-2.Print input prompt message and read corresponding input data
-
-3.Calculate the miles the automobile can be driven without refueling
-
-4.Print output prompt message and process result (Net salary)
-
 ### Algorithm
 1.Start
 
