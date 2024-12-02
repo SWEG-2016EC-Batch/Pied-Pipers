@@ -45,3 +45,9 @@ Calculate the total time in seconds using the formula: time = byte / bytePerSeco
 8.Output the time in a readable format.
 
 9.End
+
+
+#  flow chart
+
+
+![aaa](https://github.com/user-attachments/assets/60792eaf-f786-4a0e-84d1-9895935dca54)
