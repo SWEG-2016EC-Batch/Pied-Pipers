@@ -28,3 +28,22 @@ Number of miles the automobile can be driven without refueling.
 9. Output the value of miles with an appropriate message.
 10. End
 
+
+## Flowchart
+
+
+``` mermaid
+
+flowchart TD
+    A([start]) --> B[Declare cap_fuel, mile_perGallon, num_miles ]
+    B --> C[/Read cap_fuel/]
+    C --> D{Is cap_fuel invalid input ?}
+    D -->|Yes| R[/Print "Invalid input!"/]
+    R --> K
+    D --> |No| F[/Read mile_perGallon/]
+    F --> G{Is mile_perGallon invalid input ?}
+    G -->|Yes| R
+    G -->|No| I[num_miles = cap_fuel * mile_perGallon]
+    I --> J[/Print num_miles/]
+    J --> K([end])
+```
