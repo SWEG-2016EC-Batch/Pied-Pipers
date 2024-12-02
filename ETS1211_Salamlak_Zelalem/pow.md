@@ -1,22 +1,50 @@
-/*3,the algorithm that find the result of the expression X^Y.
- where the value of X and Y aare entered by the user.
+# Problem Analysis 
+## Problem Statement 
+* The program calculates the result of  x raised to the power of y 
+     * The user enters the value of x and y.
+     * The output will be x raised to the power of y .
+     * x raised to the power of y is calculated by multiplying x by it self y times
+## Algorithm 
 
- input-X(base),Y(exponent)
- output-result of X^Y
+1. **Start**
 
-step 1- start
-    step 2- Prompt the user to input values for X and Y
-         PRINT "Enter the base value (X):"
-         READ X
+2. **Accept** the values of x and y.
 
-         PRINT "Enter the exponent value (Y):"
-         READ Y
+3. **Check the validity of the inputs**:
 
-    step 3-Initialize the result variable
-    result = 1
+    3.1. If both inputs are valid (numeric and not zero for both x and y at the same time), proceed to Step 4.
 
-    step 4- calculate X^Y
-    step 5- print the result
-        result = pow(X,Y)
-step 5- stop
-        */
+    3.2. If the inputs are invalid (both x and y are zero or inputs are non-numeric), print "Invalid input" and go to Step 6.
+
+4. **Calculate x raised to the power of y** as the multiplication of x by itself y times
+
+5. **Print** the value of x raised to the power of y .
+
+6. **Stop**
+
+## Flowchart 
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Accept the values of x and y./]
+    B --> C{"`Check the input's
+          Validity
+     (numeric and not zero
+      for both x and y
+     at the same time)`"}
+    C -- False --> D[/Invalid Input/]
+    D --> M([Stop])
+    C -- True --> F["`Calculate
+ x raised to the power of y
+           x^y
+ `"]
+    F --> L[/Print the value of
+   x raised to the power of y /]
+    L --> M([Stop])
+
+
+
+
+
+
+
