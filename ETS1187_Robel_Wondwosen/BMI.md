@@ -73,3 +73,8 @@
 3. End 
 
 
+# Flow chart
+
+![1 (1)](https://github.com/user-attachments/assets/ba11d47a-433f-4e1c-a0ad-7f3cf075f01e)
+
+
