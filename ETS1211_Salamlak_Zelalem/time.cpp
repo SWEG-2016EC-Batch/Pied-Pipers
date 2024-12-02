@@ -1,32 +1,30 @@
-#include <iostream>
-#include <iomanip>
-using namespace std;
+/* A serial transmission line can transmit 960 characters a second. 
+Write a program that will calculate how long it will take to send a file */
 
-int main() {
-   const int transmissionRate= 960; 
-   const double fileSizeMB = 400.0; 
-    
-    int bytesInMB = 1048576;
-    double fileSizeBytes = fileSizeMB * bytesInMB;
-    
-    double timeInSeconds = fileSizeBytes / transmissionRate;
-    
-    int days = timeInSeconds / 86400;
-    timeInSeconds -= days * 86400;
-    
-    int hours = timeInSeconds / 3600;
-    timeInSeconds -= hours * 3600; 
-    
-    int minutes = timeInSeconds / 60;
-    timeInSeconds -= minutes * 60;
-    
-    int seconds = static_cast<int>(timeInSeconds);
-    
-    cout << fixed << setprecision(2); 
-    cout << "Time to send a " << fileSizeMB << " MB file at " << transmissionRate
-         << " characters per second:" << endl;
-    cout << "Days: " << days << ", Hours: " << hours << ", Minutes: " << minutes
-         << ", Seconds: " << seconds << endl;
-    
-    return 0;
+#include <iostream>
+using namespace std;
+int main(){
+    double file_size, byte;
+    int time, hours, minutes, seconds, days;   // Declaration and initaialization of variables
+    const int transmission_per_second= 960;  // file transmission per second 
+  
+    cout <<"Enter the size of your file (Mb): ";
+    cin>>file_size;        // Enter the file size 
+      if (cin.fail() || file_size < 0){   // check the file size is valid 
+    cout << "invalid input"; 
+    }else{
+    byte = 1048576 * file_size ;   //converts the Mb file to bytes
+    time =byte/transmission_per_second;   // calculates the time it takes to send the file
+    // convert the time to days, hours,minutes and seconds;
+days = time /86400;    
+time = time % 86400;
+hours = time /3600;
+time = time % 3600;
+minutes = time / 60;
+seconds = time % 60;
+    cout<<"The time it takes to send " << file_size << " Mb is: "<<endl<< days<< " days " <<endl << hours<<" hrs " <<endl << minutes<< " mins "<<endl<< seconds<<" Seconds";
+  }
+          
+return 0;
+
 }
