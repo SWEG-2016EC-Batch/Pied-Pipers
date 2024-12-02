@@ -58,3 +58,6 @@
 
 13. End
 
+# flow chart
+
+![slalry4](https://github.com/user-attachments/assets/b095040f-3d20-4b2d-948c-7d78f2a0c2ea)
