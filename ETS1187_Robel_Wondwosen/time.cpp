@@ -1,21 +1,50 @@
 #include <iostream>
 using namespace std;
+
 int main(){
-  int byte,time;
-    const int bytePerSecond = 960;
-    cout <<"Enter the size of your file: ";
-    cin>>byte;
-    time=byte/bytePerSecond;
-    int hours, minutes, seconds, days;
-days = time /86400;    
-time= time % 86400;
-hours = time /3600;
-time= time % 3600;
-minutes = time / 60;
-seconds = time % 60;
-    cout<<"The time it takes to send a file is: "<<days<< " days " << hours<<" hrs "<< minutes<< " mins "<< seconds<<" Seconds";
+
+    int transmission_rate = 960;
+    double file_size;
+    int transmission_time;
+
+    cout << "Enter the size of file: ";
+    cin >> file_size;
+    cout << endl;
+
+    transmission_time = file_size / transmission_rate;
+
+    if(cin.fail() || file_size < 0){
+        cout << "invalid input";
+    }
+
+    else if(file_size <= 960){
+        cout << "It will take 1 or less than 1 second transmit the file" << endl;
+    }
+
+    else if(transmission_time < 3600){
+        int minutes = (transmission_time / 60);
+        int seconds = (transmission_time % 60);
+        cout << "It will take " << transmission_time << " seconds to send " << file_size<< "size of file";
+
+    } else if(transmission_time >= 3600 && transmission_time < 86400){
+        int hours = (transmission_time / 3600);
+        int minutes = (transmission_time % 3600)/60;
+        int seconds = (transmission_time % 3600)%60;
+
+        cout << "It will take " <<hours << " hours, "<< minutes << " minutes and " << seconds << " seconds"<<"to send "<< file_size << "amount of file";
+
+        cout << hours << endl;
+        cout << minutes << endl;
+        cout << seconds << endl;
+    } else if(transmission_time >= 86400){
+        int days = transmission_time / 86400;
+        int hours = (transmission_time % 86400)/3600;
+        int minutes = ((transmission_time % 86400)%3600)/60;
+        int seconds = ((transmission_time % 86400)%3600)%60;
+
+        cout << "It will take " <<days << " days, "<<hours << " hours, "<< minutes << " minutes and " << seconds << " seconds"<< " to send"<< file_size<< " amount of file";
 
 
-
-  return 0;
+    }
+    return 0;
 }
