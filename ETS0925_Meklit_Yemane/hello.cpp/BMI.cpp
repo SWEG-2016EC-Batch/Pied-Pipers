@@ -4,36 +4,37 @@
  int main(){
     //BMI calculator 
 
-   char choice;
-   do{
-   double height,weight,bmi;
-   cout <<"Enter your height in m: ";
-   cin>>height;
-   cout <<"Enter your weight in kg: ";
-   cin>>weight;
-   if(height <= 0){
-    cout <<"Invalid height. Please enter a positive value.\n";
-    continue;
-   }
-   bmi=weight/(height * height);
-
-    cout <<"Your body mass index is: "<<bmi<<endl;
-     if (bmi < 18.5) { 
-        cout <<"You are Underweight"<<endl;
-         } 
-         else if (bmi >= 18.5 && bmi <= 24.9) 
-         {
-             cout <<"You are Normalweight"<<endl; 
-         } 
-         else { 
-            cout <<"You are overweight"<<endl; 
-            }
-      cout << "Do you want to calculate BMI for another person? (y/n): ";
+ while (true) {
+        char choice;
+        double weight, height, bmi;
+        cout << "Enter weight (in kg): ";
+        cin >> weight;
+        if (cin.fail()) {
+            cout << "Invalid input! Program terminated.\n";
+            break;
+        }
+        cout << "Enter height (in meters): ";
+        cin >> height;
+        if (cin.fail() || height <= 0) {
+            cout << "Invalid input! Program terminated.\n";
+            break;
+        }
+        bmi = weight / (height * height);
+        cout << "Your BMI is: " << bmi << endl;
+        if (bmi < 18.5)
+            cout << "you are UnderWeight\n";
+        else if (bmi >= 18.5 && bmi < 24.9)
+            cout << "You are NormalWeight\n";
+        else if (bmi >= 25.0 && bmi <=29.5)
+            cout << "You are OverWeight\n";
+        else
+            cout <<"you are Obese\n";
+        cout << "Do you want to calculate BMI for another person? (y/n): ";
         cin >> choice;
-    } while (choice == 'y' || choice == 'Y');
-
-    cout << "Program terminated.\n";
- 
-   }
+        if (choice != 'y' && choice != 'Y') {
+            break;
+        } 
+      
+    }
     return 0;
  }
