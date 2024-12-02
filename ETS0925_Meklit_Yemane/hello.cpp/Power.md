@@ -29,4 +29,9 @@ Formula:result= x^y
 9. Output the value of `power`.
 10. End
 
+    # flow chart
+
+
+![powerxy](https://github.com/user-attachments/assets/193e1278-8acd-4914-bb9f-74e06772dbfc)
+
 
