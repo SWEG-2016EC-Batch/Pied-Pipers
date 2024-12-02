@@ -69,3 +69,28 @@
 
     Print "Bonus Payment: " + BonusPayment
 6. Stop
+
+
+## Flowchart
+
+``` mermaid
+flowchart TD
+    A([start]) --> B[Declare weekly_working_hr, bonus_rate_hr, base_salary, employee_name, groos_salary, net_salary, bonus_payment, pension, tax, pensipn_rate, tax_rate]
+    B --> Z[/Read employee_name/]
+    Z --> C[/Read weekly_working_hr/]
+    C --> D{Is weekly_working_hr < 0 or invalid input ?}
+    D -->|Yes|E[/Print "Invalid input!"/]
+    E --> J
+    D --> |No| F[/Read bonus_rate_hr/]
+    F -->  G{is bonus_rate_hr < 0 or other invalid input }
+    G --> |Yes| E
+    F -->|No| H[bonus_payment = weekly_working_hr * bonus_rate_hr, 
+    groos_salary = bonus_payment + base_salary,
+     pension = base_salary * pension_rate, 
+     tax = base_salary * tax_rate, 
+    net_salary = gross_salary - pension-tax]
+    H --> I[/Print
+employee_name, weekly_working_hr, bonus_rate_hr, base_salary,tax_rate, pension_rate,bonus_payment, gross_salary, pension,tax, net_salary/]
+    I --> J([end])
+    
+```
