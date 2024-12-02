@@ -28,3 +28,22 @@ To calculate the power, we use the function `pow`(x, y) from the `<cmath>` libra
 10. End
 
 
+## Flowchart
+
+``` mermaid
+flowchart TD
+    A([start]) --> B[Declare and initialize result = 1]
+    B --> C[/Read base and exponent/]
+    C --> D{Are both base and exponent 0 ?}
+    D -->|Yes|E[/Print "Undefined!"/]
+    E --> L
+    D --> |No| F{Is the base negative and the exponent fraction ?}
+    F --> |Yes| G[/Print "It's an imaginary number and it doesn't work under real number"/]
+    G --> L
+    F -->|No| H{Is either of the base or the exponent or both invalid input ?}
+    H -->|yes| I[/Print "Error!"/]
+    I --> L
+    H -->|No| J[result = base^exponent]
+    J --> K[/Print result/]
+    K --> L([end])
+```
