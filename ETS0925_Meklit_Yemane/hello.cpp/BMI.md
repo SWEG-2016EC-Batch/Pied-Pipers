@@ -58,17 +58,17 @@
    
    2.3 check if the inputs are valid:
    
-   2.3.1 if the input is invalid or height <=0, display an error and terminate the program
+      2.3.1 if the input is invalid or height <=0, display an error and terminate the program
        
    2.4 calculate BMI using the Formula: BMI = Weight/(height * height)
    
    2.5 Based on the BMI value:
    
-   2.5.1 If BMI < 18.5: Display "Underweight".
+      2.5.1 If BMI < 18.5: Display "Underweight".
        
-   2.5.2 If 18.5 ≤ BMI ≤ 24.9: Display "Normal weight".
+      2.5.2 If 18.5 ≤ BMI ≤ 24.9: Display "Normal weight".
        
-   2.5.3 If BMI ≥ 25: Display "Overweight".
+      2.5.3 If BMI ≥ 25: Display "Overweight".
        
    2.6 Ask the user if they want to calculate BMI for another person.
    
