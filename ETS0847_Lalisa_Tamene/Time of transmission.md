@@ -45,3 +45,16 @@
 
 5. Stop
    
+## Flowchart
+
+``` mermaid
+flowchart TD
+    A([start]) --> B[/Read size/]
+    B --> C{Is size < 0 or invalid input ?}
+    C --> |YES| D[/Invalid input!/]
+    D --> G
+    C -->|No| E[total seconds = size / 960]
+    E --> K[change the total second in to days , hours, minutes and seconds]
+    K --> F[/days, hours, minutes and seconds/]
+    F --> G([end])
+```
