@@ -27,5 +27,11 @@ To calculate the power, we use the function `pow`(x, y) from the `<cmath>` libra
 9. Output the value of `power`.
 10. End
 
+# flow chart
+
+
+![powerxy](https://github.com/user-attachments/assets/193e1278-8acd-4914-bb9f-74e06772dbfc)
+
+
 
 
