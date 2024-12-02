@@ -72,3 +72,27 @@
 3. End 
 
 
+#Flowchart
+
+flowchart TD
+    A([start]) --> B[Read weight in kg]
+    B --> C{is weight invalid input?}
+    C -->|Yes| D{is trial of weight > 0 ?}
+    D -->|Yes| B
+    D -->|No| N
+    C -->|No| E[/Read height in m/]
+    E --> F{is height invalid input?}
+    F -->|Yes| G{Is trial of height > 0 ?}
+    G -->|Yes| E
+    G -->|NO| N
+    F -->|No| P[BMI = weight /height^2]
+    P --> H[/ Print BMI/]
+    H --> I{Is 0 < BMI < 18.5 ?}
+    I -->|Yes| J[/ Print "Under weight"/]
+    I -->|No| K{Is 18.5 <= BMI < 25 ?}
+    K -->|Yes| L[/Print "Normal weight"/]
+    K -->|No| M[/Print "Over weight"/]
+    L --> N([End])
+    J --> N
+    M --> N
+
