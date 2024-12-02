@@ -28,26 +28,6 @@ Bonus Payment: bonus_payment = weekly_working_hours * bonus_rate_per_hour
 
 Gross Salary: gross_salary = base_salary + bonus_payment
 
-### Operation
-
-1.Variable declaration- that holds an input and operational results
-
-2.Intializing overtime payment to zero
-
-3.Defining pension as a constant 
-
-4.Print input prompt message and read corresponding input data
-
-5.Calculate net salary, for that first find the following:
-
-5.1Pension(gross salary * 0.05)
-
-5.2Income tax(gross salary * 0.15)
-
-5.3Overtime payment(Workedhours * bonusrate)
-
-6.Print output prompt message and process result (Net salary)
-
 ### Algorithm
 
 1.Start
