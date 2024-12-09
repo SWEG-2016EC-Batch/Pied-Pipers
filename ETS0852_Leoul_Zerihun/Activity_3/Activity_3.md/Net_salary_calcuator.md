@@ -78,7 +78,8 @@ flowchart TD
 (numeric and greaterthan zero)`"}
     C -- False --> D[/"`Invalid input`"/]
      D --> Z([Stop])
-   C -- True --> E{"`Check if the worked hours is greaterthan 40`"}
+   C -- True --> E{"`Check if the worked hours
+is greaterthan 40`"}
 E -- True --> F["`Calculate extra worked hour
 EWR = WR - 40`"]
 E -- False --> G["`Gross salary is equal to
@@ -117,8 +118,14 @@ T -- False --> U[/The tax rate is 0.3/] --> V["` Calculate tax
 tax = gross salary × tax rate `"]
 V --> X["` Calculate Net-Pay
 Np = Gs - Pen - Tax`"]
-X --> Y[/ Print
-Net-Pay/] --> Z([Stop])
+X --> Y[/"` Print
+    Net-Pay
+    Bonus
+    Gross Salary
+    Tax and Pension `"/] --> Z([Stop])
+
+
+
 
 
 
