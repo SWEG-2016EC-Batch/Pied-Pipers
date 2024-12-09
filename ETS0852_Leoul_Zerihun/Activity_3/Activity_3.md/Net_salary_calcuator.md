@@ -84,9 +84,9 @@ E -- True --> F["`Calculate extra worked hour
 EWR = WR - 40`"]
 E -- False --> G["`Gross salary is equal to
 Basic salary`"]
-G --> L{Check the corresponding tax rate
-if gross salary is
-lessthan 200 birr.}
+G --> J["`Calcualte Pension
+pension = BS × 0.07 `"]
+
 F --> H["` calculate bonus
 bonus = EWR × bonus rate `"]
 H --> I["`Calculate Gross salary
