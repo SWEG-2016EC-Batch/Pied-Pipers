@@ -22,13 +22,15 @@
    Step 1. **Start**
 
    Step 2. **Declare** variables
-     * number
-     * reversed number = 0
-     * digit
-     * remainder 
+    
+   * number
+   * reversed number = 0
+   * digit
+   * remainder 
 
    Step 3. **Accept** Inputs
-     * number
+    
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -57,12 +59,14 @@
    Step 1. **Start**
 
    Step 2. **Declare** variables
-     * number
-     * counter = 0
-     * Count
+   
+   * number
+   * counter = 0
+   * Count
 
    Step 3. **Accept** Inputs
-     * number
+    
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -89,11 +93,13 @@
    Step 1. **Start**
 
    Step 2. **Declare** variables
-     * number
-     * product = 1
+   
+   * number
+   * product = 1
 
    Step 3. **Accept** Input 
-     * number
+    
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -119,7 +125,7 @@
 
    Step 9. **Remove** the last digit from the number by dividing it by 10.
 
-    Step 10. **Print** product 
+   Step 10. **Print** product 
 
    Step 11. **Stop**
 
@@ -128,13 +134,15 @@
    Step 1. **Start**
 
    Step 2. **Declare and initaialize** variables
-     * number
-     * first
-     * last
-     * sum
+   
+   * number
+   * first
+   * last
+   * sum
        
    Step 3. **Accept** Input 
-     * number
+   
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -164,13 +172,15 @@
    Step 1. **Start**
 
    Step 2. **Declare and initaialize** variables
-     * number
-     * first
-     * last
-     * digit
+   
+   * number
+   * first
+   * last
+   * digit
 
    Step 3. **Accept** Input 
-     * number
+   
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -201,13 +211,15 @@
    Step 1. **Start**
 
    Step 2. **Declare** variables
-     * number
-     * reversed number = 0
-     * digit
-     * remainder 
+  
+   * number
+   * reversed number = 0
+   * digit
+   * remainder 
 
    Step 3. **Accept** Inputs
-     * number
+  
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -242,14 +254,16 @@
    Step 1. **Start**
 
    Step 2. **Declare and initaialize** variables
-     * number
-     * first
-     * last
-     * digit
-     * array frequency[10]
+  
+   * number
+   * first
+   * last
+   * digit
+   * array frequency[10]
 
    Step 3. **Accept** Input 
-     * number
+    
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -278,11 +292,13 @@
 Step 1. **Start**
 
    Step 2. **Declare and initaialize** variables
-     * number
-     * sum = 0
+    
+   * number
+   * sum = 0
      
    Step 3. **Accept** Input 
-     * number
+  
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -319,12 +335,14 @@ Step 1. **Start**
    Step 1. **Start**
 
    Step 2. **Declare and initaialize** variables
-     * number
-     * Sum = 0
+    
+   * number
+   * Sum = 0
     
 
    Step 3. **Accept** Input 
-     * number
+  
+   * number
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
