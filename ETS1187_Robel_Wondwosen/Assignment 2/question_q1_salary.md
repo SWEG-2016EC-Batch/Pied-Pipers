@@ -22,7 +22,7 @@
 
 4. **Net Salary:** net_salary = gross_salary - incometax - Pension
 
-## Algorithm:
+## pesudo code:
 1. start
 2. DECLARE weeklyHours AS INTEGER
 3. DECLARE baseSalary, incometax, bonusPayment AS FLOAT
