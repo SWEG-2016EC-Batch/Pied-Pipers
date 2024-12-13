@@ -40,13 +40,13 @@
 
    Step 5. **Check** the number
   
-   *  5.1. While the  number is greaterthan zero, goto step 5.
+   *  5.1. While the  number is greaterthan zero, goto step 6.
 
-   *  5.2. While the number is lessthan zero, goto step
+   *  5.2. While the number is lessthan zero, goto step 10
 
    Step 6. **Extract** the last digit of the number using modulo of 10.
      
-   Step 7. **Add** the digit to the reverse number by multiplying reverse by 10 abd adding digit
+   Step 7. **Add** the digit to the reverse number by multiplying reverse by 10 and adding digit
 
    Step 8. **Remove** the last digit from the number by dividing it by 10
 
@@ -72,13 +72,13 @@
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 9.
 
    Step 5. **Check** the number
   
    5.1. While the  number is greaterthan zero, goto step 6.
 
-   5.2. While the number is lessthan zero, goto step 10
+   5.2. While the number is lessthan zero, goto step 9
 
    Step 6. **Increment** the counter by one.
 
@@ -105,7 +105,7 @@
 
   * 4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 11.
 
    Step 5. **Check the number**
   
@@ -154,7 +154,7 @@
   
    *  5.1. While the  number is greaterthan zero, goto step 6.
 
-   * 5.2. While the number is lessthan zero, goto step 11
+   * 5.2. While the number is lessthan zero, goto step 10
 
    Step 6. **Extract** the last digit of the number using modulo of 10 and store it in last.
      
@@ -186,7 +186,7 @@
 
   *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 11.
 
    Step 5. **Check** the number
   
@@ -225,13 +225,13 @@
 
    * 4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 12.
 
    Step 5. **Check** the number
   
    *  5.1. While the  number is greaterthan zero, goto step 5.
 
-   *  5.2. While the number is lessthan zero, goto step
+   *  5.2. While the number is lessthan zero, goto step 12
 
    Step 6. **Extract** the last digit of the number using modulo of 10.
      
@@ -275,7 +275,7 @@
   
    *  5.1. While the  number is greaterthan zero, goto step 6.
 
-   *  5.2. While the number is lessthan zero, goto step 11
+   *  5.2. While the number is lessthan zero, goto step 10
 
    Step 6. **Extract** digits of the number using modulo of 10.
      
@@ -304,13 +304,13 @@ Step 1. **Start**
 
   *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 12
 
    Step 5. **Check** the number
   
    *  5.1. While the  number is greaterthan zero, goto step 6.
 
-   *  5.2. While the number is lessthan zero, goto step 11
+   *  5.2. While the number is lessthan zero, goto step 12
 
    Step 6. **Extract** the digits of the number using modulo of 10.
      
@@ -348,7 +348,7 @@ Step 1. **Start**
 
   *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+  * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 11.
 
    Step 5. **Check** the number
   
