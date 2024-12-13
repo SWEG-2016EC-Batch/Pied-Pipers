@@ -29,14 +29,15 @@
    * columns  
 
    Step 3. **Accept** Inputs
-     * rows
-     * columns   
+     
+   * rows
+   * columns   
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
    * 4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
    Step 5. **Initialize** a loop
    
@@ -55,6 +56,7 @@
    Step 2. **Declare** variables  
   * rows
   * columns
+  * ch = 'A'
 
    Step 3. **Accept** Inputs  
   * rows
@@ -64,18 +66,20 @@
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 9.
 
 Step 5. **Initialize** a loop
    
   * 5.1. Outer Loop: For i from 0 to rows
   * 5.2. Inner Loop: For j from 0 to columns 
 
-   Step 6. **Print** ch with a space in between
+   Step 6. **Print** ch with a space in between.
 
-   Step 7. **Print** a newline after the inner loop
+   Step 7. **Increment** ch by 1.
 
-   Step 8. **Stop**
+   Step 8. **Print** a newline after the inner loop
+
+   Step 9. **Stop**
 
  ### Print a right-aligned half pyramid of numbers.
   
@@ -91,7 +95,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -101,6 +105,8 @@ Step 5. **Initialize** a loop
  Step 6. **Print** j with space in between
 
  Step 7. **Print** a newline after the inner loop
+
+ Step 8. **Stop**
 
  ### Print a Left-Aligned Half Pyramid of Numbers
   
@@ -116,7 +122,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 9.
 
 Step 5. **Initialize** a loop
    
@@ -147,14 +153,14 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
   * 5.1. Outer Loop: For i from rows to 1
   * 5.2. Inner Loop: For ch from 'A' to 'A' + i
 
- Step 6. **Print** ch with space in between
+ Step 6. **Print** ch with space in between.
 
  Step 7. **Print** a newline after the inner loop
 
@@ -177,7 +183,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -207,7 +213,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -234,7 +240,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -261,7 +267,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -288,7 +294,7 @@ Step 5. **Initialize** a loop
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 8.
 
 Step 5. **Initialize** a loop
    
@@ -326,7 +332,7 @@ Step 5. **Initialize** a loop
 rows
   * 5.3. Inner Loop: For spaces from rows - i
 
- Step 6. **check** if i is equalto zero or i is equalto the differce between rows and 1 or j is equal to zero of j is equal to i 
+ Step 6. **check** if i is equal to zero or i is equal to the difference between rows and 1 or j is equal to zero of j is equal to i 
   * 6.1. If one is true goto step 7.
   * 6.2. If all are false goto step 8.
 
@@ -349,7 +355,7 @@ rows
 
    *  4.1. If the input is valid (numeric or greaterthan zero), go to step 5.
  
-   * 4.2. If the input is invalid (non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
+   * 4.2. If the input is inv, go to(non- numeric or lessthan zero), Print "Invalid input" and goto step 10.
 
 Step 5. **Initialize** a loop
    
@@ -363,8 +369,11 @@ i
   * 6.2. If all are false goto step 8.
 
  Step 7. **Print** '*' 
+
  Step 8. **Print** a space
+ 
  Step 9. **Print** a newline after the inner loop.
+
  Step 10. **Stop**
 
 ### Print a Hollow Rectangle of Stars
