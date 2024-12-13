@@ -2,7 +2,6 @@
 using namespace std;
 
 int main () {
-   int count = 1;
    char ch = 'A';
    int  c = 4, f=5, d= 7, e = 8, g= 6;
    int choice;
@@ -30,7 +29,7 @@ int main () {
             cout <<endl;
         break;
        case 3: 
-            cout << "Half pyramid of numbers to the right" << endl;
+            cout << "Half pyramid of numbers aligned to right" << endl;
             for (int i = 1; i <= f; i++) {
                 for (int j = 1; j <= i; j++)
                     cout << j << " ";
@@ -39,7 +38,7 @@ int main () {
             cout <<endl;
             break;     
       case 4: 
-           cout << "Half pyramid of numbers to the left" << endl;
+           cout << "Half pyramid of numbers aligned to left" << endl;
             for (int i = 1; i <= f; i++) {
         for (int space = 1; space <= (f - i) * 3; space++) {
             cout << " ";
