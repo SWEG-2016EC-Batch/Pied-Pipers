@@ -8,7 +8,7 @@ int main() {
     int freq[10];
 
     
-      cout << "Choose (0-9): " << endl;
+      cout << "Choose (1-9): " << endl;
       cout <<"1. Reverse the number" <<endl;
       cout << "2. Count digits" <<endl;
       cout << "3. Product of even digits"<<endl;
@@ -18,12 +18,8 @@ int main() {
        cout << "7. Digit frequency"<<endl;
        cout <<"8. Check Armstrong number"<<endl;
       cout << "9. Check Perfect number"<<endl;
-      cout << "0. Exit"<<endl;
        cout << "Enter your choice: ";
       cin >> choice;
-
-        if (choice == 0) {
-        return 1;}
         
         cout << "Enter a number: ";
         cin >> num;
