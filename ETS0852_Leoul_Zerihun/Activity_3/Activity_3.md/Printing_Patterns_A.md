@@ -65,9 +65,11 @@ Step 4. **Initialize** a loop
 
    Step 5. **Print** ch with a space in between
 
-   Step 6. **Print** a newline after the inner loop
+   Step 6. **Increment** ch by 1.
 
-   Step 7. **Stop**
+   Step 7. **Print** a newline after the inner loop
+
+   Step 8. **Stop**
 
  ### Print a right-aligned half pyramid of numbers.
   
