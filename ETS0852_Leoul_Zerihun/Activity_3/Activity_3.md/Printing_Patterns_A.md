@@ -15,8 +15,7 @@
     * Print an inverted hollow half pyramid of stars.
     * Print a hollow rectangle of stars.
 
-* The variables are Initialized(no inputs required from the user)
-
+* The variables are Initialized
 ## Algorithm Design 
 
 ### Pseudocode 
@@ -29,8 +28,10 @@
    * columns
 
    Step 3. **Initialize** variables 
-     * rows= 5
-     * columns= 5   
+   * rows= 5
+   * columns= 5
+    
+  
        
    Step 4. **Initialize** a loop
    
@@ -38,6 +39,7 @@
   * 4.2. Inner Loop: For j from 1 to columns
 
    Step 5. **Print** j with space in between 
+  
    Step 6. **Print** a newline after the inner loop
 
    Step 7. **Stop**
