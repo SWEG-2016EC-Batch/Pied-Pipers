@@ -59,11 +59,11 @@
 
     SET netSalary TO gross_salary - incometax - pension
 
-18. PRINT "Gross Salary: $", baseSalary + bonusPayment (formatted to 2 decimal places)
-19. PRINT "Bonus Payment: $", bonusPayment
-20. PRINT "Income Tax: $", incometax
-21. PRINT "Pension: $", pension
-22. PRINT "Net Salary: $", netSalary
+18. PRINT baseSalary + bonusPayment (formatted to 2 decimal places)
+19. PRINT bonusPayment
+20. PRINT incometax
+21. PRINT  pension
+22. PRINT netSalary
 23. END
 
 
