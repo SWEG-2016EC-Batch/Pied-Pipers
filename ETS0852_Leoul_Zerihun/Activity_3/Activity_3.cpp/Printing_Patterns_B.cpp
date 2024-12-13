@@ -6,13 +6,25 @@ int main () {
    char ch = 'A';
    int rows, columns;
    int choice;
-   
+   cout << "Choose (1-12): " << endl;
+      cout <<"1. Rectangle of Numbers" <<endl;
+      cout << "2. Rectangle of Alphabet" <<endl;
+      cout << "3. Half pyramid of numbers aligned to right"<<endl;
+      cout << "4. Half pyramid of numbers aligned to left"<<endl;
+      cout << "5. Inverted half pyramid of Alphabets"<<endl;
+       cout << "6. Rectangle of small alphabets"<<endl;
+       cout << "7. Inverted half pyramid of stars"<<endl;
+       cout <<"8. Full pyramid of stars"<<endl;
+      cout << "9. Inverted full pyramid of stars"<<endl;
+      cout << "10. Hollow full pyramid of stars"<<endl;
+      cout << "11. Inverted hollow half pyramid of stars" << endl;
+      cout << "12. Rectangle hallow of stars"<<endl;
+       cout << "Enter your choice: ";
+      cin >> choice;
      cout << "Enter the number of rows: ";
     cin >> rows;
     cout << "Enter the number of columns: ";
     cin >> columns;
-  cout << "Enter the choice of pattern: ";
-    cin >> choice;
 if (cin.fail() || rows <= 0 || columns <= 0) {
 cout << "Invalid input";
 }else{
@@ -67,7 +79,7 @@ cout << "Invalid input";
             }
            break;  
             case 6:
-            cout << "Rectangle of alphabets" << endl;
+            cout << "Rectangle of small alphabets" << endl;
             
             for (int i = 1; i <=rows; i++) {
                 for (char ch = 'a'; ch < 'a' + columns; ch++)
