@@ -7,7 +7,7 @@
      * Project(20%)
      * Assignment(10%)
      * Quize(5%)
-     * *Final(50%)
+     * Final(50%)
   * The output wil be the letter grade of the student based on the folowing scale.
      * if grade is >=90 is A+
      * if grade is >=80 is A
