@@ -1,5 +1,39 @@
 
 ## Problem Analysis:
+
+**Input**
+
+- Number of rows
+- Number of columns
+
+**Output**
+
+Various patterns:
+
+       Grid of numbers
+       
+       Characters from 'A' to 'X' with line breaks
+       
+       Right-angled triangle of numbers
+       
+       Inverted right-angled triangle of numbers
+       
+       Right-angled triangle of letters
+       
+       Grid of lowercase letters
+       
+       Hollow square of asterisks
+       
+       Right-aligned triangle of asterisks
+       
+       Pyramid shape of asterisks
+       
+       Inverted pyramid shape of asterisks
+       
+       Hollow inverted half pyramid
+       
+       Hollow full pyramid
+       
 **Pattern 1**:
 
 Print a square grid of numbers from 1 to num, where num is provided by the user.
