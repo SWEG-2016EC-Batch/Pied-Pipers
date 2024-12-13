@@ -25,7 +25,7 @@
     
    * number
    * reversed number = 0
-   * digit
+   * last
    * remainder 
 
    Step 3. **Accept** Inputs
@@ -95,11 +95,13 @@
    Step 2. **Declare** variables
    
    * number
+   * last
    * product = 1
 
    Step 3. **Accept** Input 
     
    * number
+   * first
        
    Step 4. **Check** the validity of the inputs(numeric and greaterthan zero)
 
@@ -294,7 +296,8 @@ Step 1. **Start**
    Step 2. **Declare and initaialize** variables
     
    * number
-   * sum = 0
+   * sum_arm= 0
+   * digit
      
    Step 3. **Accept** Input 
   
@@ -314,7 +317,7 @@ Step 1. **Start**
 
    Step 6. **Extract** the digits of the number using modulo of 10.
      
-   Step 7. **Add** the digits cubed to sum and store it in sum.
+   Step 7. **Add** the digits cubed to sum and store it in sum_arm.
    
    Step 8. **Remove** the digits by dividing it by 10.
 
@@ -337,8 +340,8 @@ Step 1. **Start**
    Step 2. **Declare and initaialize** variables
     
    * number
-   * Sum = 0
-    
+   * Sum_divisors = 0
+   * digit
 
    Step 3. **Accept** Input 
   
