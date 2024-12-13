@@ -82,7 +82,8 @@ Print a diagonal and top border of stars.
 
 Print a star pyramid with specific conditions.
 
-## Algorithm:
+## Pseudo Code:    
+
 1. Start
 
 2. DECLARE num, i, j, choice AS INTEGER
