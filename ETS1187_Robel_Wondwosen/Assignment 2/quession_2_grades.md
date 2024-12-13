@@ -30,7 +30,7 @@
        F for 0-29 (with a message indicating failure)
 
 
-## Algorithm:
+## Pseudo Code:
 1. SATART
 
 2. DECLARE test, quiz, project, assignment, final AS INTEGER
