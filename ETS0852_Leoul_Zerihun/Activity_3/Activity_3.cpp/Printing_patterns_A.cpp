@@ -5,8 +5,20 @@ int main () {
    char ch = 'A';
    int  c = 4, f=5, d= 7, e = 8, g= 6;
    int choice;
- 
-  cout << "Enter the choice of pattern: ";
+      cout << "Choose patterns (1-12): " << endl;
+      cout <<"1. Rectangle of Numbers" <<endl;
+      cout << "2. Rectangle of Alphabet" <<endl;
+      cout << "3. Half pyramid of numbers aligned to right"<<endl;
+      cout << "4. Half pyramid of numbers aligned to left"<<endl;
+      cout << "5. Inverted half pyramid of Alphabets"<<endl;
+       cout << "6. Rectangle of small alphabets"<<endl;
+       cout << "7. Inverted half pyramid of stars"<<endl;
+       cout <<"8. Full pyramid of stars"<<endl;
+      cout << "9. Inverted full pyramid of stars"<<endl;
+      cout << "10. Hollow full pyramid of stars"<<endl;
+      cout << "11. Inverted hollow half pyramid of stars" << endl;
+      cout << "12. Rectangle hallow of stars"<<endl;
+       cout << "Enter your choice: ";
     cin >> choice;
 
     switch(choice) {
