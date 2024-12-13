@@ -20,43 +20,29 @@ int main(){
    cout << "Invalid!";
    } else {
     if (total_avarage >= 90){
-        cout << "congrats your grade is: " << "A+" << endl;
-        
+        cout << "congrats your grade is: " << "A+" << endl;   
     }
     else if (total_avarage >= 80 && total_avarage <= 89){
         cout << "congrats your grade is: "<< "A" << endl;
     }
-
     else if (total_avarage >= 75 && total_avarage <= 79){
         cout << "your grade is: " << "B+" << endl;
-
     }
     else if (total_avarage >= 60 && total_avarage <= 74){
         cout << "your grade is: " << "B" << endl;
-
     }
-
     else if (total_avarage >= 55 && total_avarage <= 59){
         cout << "your grade is: " << "C+" << endl;
-
     }
     else if (total_avarage >= 45 && total_avarage <= 54){
         cout << "your grade is: " << "C" << endl;
-
     }
-    
     else if (total_avarage >= 30 && total_avarage <= 44){
         cout << "your grade is: " << "D" << endl;
-
     }
     else {
         cout << "your grade is: " << "F " << endl << "you faild!"<< endl;
     }
-
-
-
    }
-
-
     return 0;
    }
