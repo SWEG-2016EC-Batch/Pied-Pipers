@@ -54,17 +54,23 @@ int main() {
         cout << "Invalid input, please restart the program and enter a positive number.";
         cin.clear();
     } else {
-        // (Passing control to next section)
-    }
-}
-// Scoring and Grading
-int* total_scores = new int[num_students];
-char* grades = new char[num_students];
-string correct_answers[20] = {"TRUE", "TRUE", "FALSE", "TRUE", "FALSE",
+      // Array of correct answers for comparison
+      string correct_answers[20] = {"TRUE", "TRUE", "FALSE", "TRUE", "FALSE",
                               "A", "B", "C", "D", "A",
                               "B", "C", "D", "A", "B",
                               "VERB TO BE", "WILLIAM SHAKESPEARE", "VERB", "SPEAKING", "AMERICA"};
 
+      // Dynamic arrays to store student answers and scores
+    string** students = new string*[num_students];
+    int* total_scores = new int[num_students];
+    char* grades = new char[num_students];
+
+
+      
+      
+      
+      
+      
 for (int i = 0; i < num_students; ++i) {
     int total_score = 0;
     for (int j = 1; j <= 20; ++j) {
@@ -199,7 +205,7 @@ for (int i = 0; i < num_students; ++i) {
     cout << "********************************" << endl;
 }
 
-
+  }
   return 0;
 }
 
