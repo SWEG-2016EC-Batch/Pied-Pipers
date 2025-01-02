@@ -64,13 +64,22 @@ int main() {
     string** students = new string*[num_students];
     int* total_scores = new int[num_students];
     char* grades = new char[num_students];
-
-
-      
-      
-      
-      
-      
+   for (int i = 0; i < num_students; ++i) {
+        students[i] = new string[21];
+    }
+    
+    // Input student IDs and their answers
+    for (int i = 0; i < num_students; i++) {
+        cout << "Enter student ID: ";
+        cin >> students[i][0];
+        cin.ignore();
+        for (int j = 1; j <= 20; j++) {
+            cout << "Enter answer for question " << j << ": ";
+            getline(cin, students[i][j]);   
+            transform(students[i][j].begin(), students[i][j].end(), students[i][j].begin(), ::toupper);  // Convert each answer to uppercase
+        }
+    }
+    
 for (int i = 0; i < num_students; ++i) {
     int total_score = 0;
     for (int j = 1; j <= 20; ++j) {
