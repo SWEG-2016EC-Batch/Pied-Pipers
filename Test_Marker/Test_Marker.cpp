@@ -1,6 +1,7 @@
 #include<iostream>
 #include <ctype.h>
 using namespace std;
+int main(){
 // Scoring and Grading
 int* total_scores = new int[num_students];
 char* grades = new char[num_students];
@@ -33,8 +34,32 @@ for (int i = 0; i < num_students; ++i) {
     } else {
         grades[i] = 'F';
     }
+
+  // Bubble sort to rank students based on total scores
+    for (int i = 0; i < num_students - 1; ++i) {
+        for (int j = 0; j < num_students - i - 1; ++j) {
+            if (total_scores[j] < total_scores[j + 1]) { // Descending order
+                // Swap marks
+                int tempMarks = total_scores[j];
+                total_scores[j] = total_scores[j + 1];
+                total_scores[j + 1] = tempMarks;
+
+                // Swap student IDs
+                string* tempStudent = students[j];
+                students[j] = students[j + 1];
+                students[j + 1] = tempStudent;
+
+                // Swap grades
+                char tempGrade = grades[j];
+                grades[j] = grades[j + 1];
+                grades[j + 1] = tempGrade;
+            }
+        }
+    }
+
+
+
+  return 0;
 }
-int main() {    
-     
- return 0;
-}
+
+
