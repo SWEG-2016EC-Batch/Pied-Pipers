@@ -101,6 +101,20 @@ for (int i = 0; i < num_students; ++i) {
     } else {
         grades[i] = 'F';
     }
+      cout << endl;
+    cout << left << setw(10) << "ID" 
+         << setw(20) << "Total score" 
+         << setw(10) << "Grade" 
+         << endl;
+    cout << "------------------------------------" << endl;
+  
+  // Print student IDs, total scores, and grades in tabular form
+    for (int i = 0; i < num_students; i++) {
+        cout << left << setw(10) << students[i][0]
+             << setw(20) << total_scores[i]
+             << setw(10) << grades[i]
+             << endl;
+    }
 
   // Bubble sort to rank students based on total scores
     for (int i = 0; i < num_students - 1; ++i) {
