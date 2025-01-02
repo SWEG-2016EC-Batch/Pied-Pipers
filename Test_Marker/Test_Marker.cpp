@@ -4,6 +4,7 @@
 #include<iomanip>
 using namespace std;
 int main(){
+  restart:
   // User Interface and Input Handling
 int main() {
     int num_students, choice, functionality;
@@ -79,7 +80,7 @@ for (int i = 0; i < num_students; ++i) {
         cout << endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
         cout << "Which functionality do you want: " << endl;
         cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-        cout << "\n1. See top 5 or top 10 students " << "\n2. Search for a student " << endl;
+        cout << "\n1. See top 5 or top 10 students " << "\n2. Search for a student "<<"\n3. Start Over " << endl;
         cout<<"~~~~> ";
         cin >> functionality; 
           
@@ -128,6 +129,12 @@ for (int i = 0; i < num_students; ++i) {
                 }
                 break;
             }
+            case 3:
+                // Restart the program
+                cout << "\nYou have chosen to restart the program." << endl;
+                cout << "The program will now restart...\n\n";
+                goto restart; // Jump to the restart label
+                break;  
 
             default: 
                 cout << "Invalid functionality. Please try again." << endl;
