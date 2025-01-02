@@ -5,9 +5,6 @@
 using namespace std;
 int main(){
   restart:
-  // User Interface and Input Handling
-int main() {
-    restart:
     
     cout << "*****************************\n"
          << "         TEST MARKER         \n"
@@ -217,5 +214,17 @@ for (int i = 0; i < num_students; ++i) {
   }
   return 0;
 }
+
+/* Team members contribution
+ 
+Robel Wondwosen   ETS1187/16  | Sorting and Ranking
+                              |     &
+Leoul Zerihun     ETS0852/16  | Output and Additional Functionalities
+
+Meklit Yemane     ETS0925/16    Scoring and Grading 
+Salamlak Zelalem  ETS1211/16    User Interface and Input Handling
+Lelisa Tamene     ETS0847/16    Answer Collection and Storage
+
+*/
 
 
