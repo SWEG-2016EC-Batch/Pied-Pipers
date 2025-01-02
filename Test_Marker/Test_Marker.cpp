@@ -4,6 +4,22 @@
 #include<iomanip>
 using namespace std;
 int main(){
+  // User Interface and Input Handling
+int main() {
+    int num_students, choice, functionality;
+    cout << "*****************************\n"
+         << "         TEST MARKER         \n"
+         << "*****************************\n";
+
+    cout << "\nEnter the number of students: ";
+    cin >> num_students;
+    if (cin.fail() || num_students <= 0) {
+        cout << "Invalid input, please restart the program and enter a positive number.";
+        cin.clear();
+    } else {
+        // (Passing control to next section)
+    }
+}
 // Scoring and Grading
 int* total_scores = new int[num_students];
 char* grades = new char[num_students];
