@@ -1,5 +1,7 @@
-#include<iostream>
-#include <ctype.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include<iomanip>
 using namespace std;
 int main(){
 // Scoring and Grading
