@@ -7,11 +7,47 @@ int main(){
   restart:
   // User Interface and Input Handling
 int main() {
-    int num_students, choice, functionality;
+    restart:
+    
     cout << "*****************************\n"
          << "         TEST MARKER         \n"
          << "*****************************\n";
 
+    int num_students, choice, functionality;
+    char students_grade, again;
+    float percentage;
+
+     // Ask the user if they want to see the user manual
+    cout << endl << "Would you like to view the User Manual? (Y/N): ";
+    char showManual;
+    cin >> showManual;
+
+    if (showManual == 'Y' || showManual == 'y') {
+        // Display the user manual
+        cout << "\n        ***********" << endl;
+        cout << "        USER MANUAL            " << endl;
+        cout << "        ***********" << endl;
+        cout << "\nWelcome to the Test Marker Program!" << endl;
+
+        cout << "\nThis program allows instructors to grade tests for multiple students "
+             << "and calculate their grades based on the correctness of their answers." << endl;
+
+        cout << "\nSteps to use the program:" << endl;
+        cout << "1. Enter the number of students who need to be graded." << endl;
+        cout << "2. Input each student's ID and their answers for all 20 questions." << endl;
+        cout << "3. After entering the answers, the program will calculate the total score and assign a grade (A, B, C, D, or F) for each student." << endl;
+        cout << "4. Once all students are graded, you will have options to:" << endl;
+        cout << "   - See the top 5 or top 10 students based on scores" << endl;
+        cout << "   - Search for a student's details by their ID" << endl;
+        cout << "5. The program will sort the students' scores and display them in descending order (top students first)." << endl;
+
+       // cout << "\nAdditional Features:" << endl;
+        cout << "6. The program allows users to search for specific student IDs." << endl;
+        cout << "\n ----------------------------------------" << endl; 
+    }
+
+
+     // Loop to ensure valid input for number of students
     cout << "\nEnter the number of students: ";
     cin >> num_students;
     if (cin.fail() || num_students <= 0) {
