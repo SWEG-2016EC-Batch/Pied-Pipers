@@ -38,7 +38,7 @@ int main(){
         cout << "your grade is: " << "C" << endl;
     }
     else if (total_avarage >= 30 && total_avarage <= 44){
-        cout << "your grade is: " << "D" << endl;
+        cout << "your grade is: " << "D " <<"you better work hard"<< endl;
     }
     else {
         cout << "your grade is: " << "F " << endl << "you faild!"<< endl;
