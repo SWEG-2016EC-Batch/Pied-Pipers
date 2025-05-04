@@ -55,7 +55,7 @@ int main(){
       string correct_answers[20] = {"TRUE", "TRUE", "FALSE", "TRUE", "FALSE",
                               "A", "B", "C", "D", "A",
                               "B", "C", "D", "A", "B",
-                              "VERB TO BE", "WILLIAM SHAKESPEARE", "VERB", "SPEAKING", "AMERICA"};
+                              "VERB TO BE", "WILLIAM SHAKESPEARE", "VERB", "SPEAKING", "AMERICA"};//changing to user input answers
 
       // Dynamic arrays to store student answers and scores
     string** students = new string*[num_students];
